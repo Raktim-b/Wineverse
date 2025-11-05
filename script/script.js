@@ -2,6 +2,10 @@ document.addEventListener("DOMContentLoaded", function () {});
 var swiper = new Swiper(".mySwiper", {
   loop: true,
   effect: "fade",
+  autoplay: {
+    delay: 6000,
+    // disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -11,10 +15,10 @@ var swiper = new Swiper(".pop-swiper", {
   slidesPerView: 1,
   // spaceBetween: 30,
   loop: true,
-  // autoplay: {
-  //   delay: 2500,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   breakpoints: {
     576: {
       slidesPerView: 2,
