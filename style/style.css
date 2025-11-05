@@ -123,10 +123,10 @@ a {
   z-index: -1;
 }
 .btn-secondary::before {
-  left: -10px;
+  left: -15px;
 }
 .btn-secondary::after {
-  right: -10px;
+  right: -15px;
 }
 .btn-secondary:hover::before,
 .btn-secondary:hover::after {
@@ -846,6 +846,46 @@ a {
   font-size: 20px;
   color: var(--tertiary-color);
 }
+/* Offer & Shop Section */
+.offnshp-box {
+  width: 100%;
+  padding: 172px 0 125px;
+  height: 531px;
+}
+.offnshp-box1 {
+  background: url(../assets/Box1-bg.png) no-repeat center/cover;
+}
+.offnshp-box2 {
+  background: url(../assets/Box2-bg.png) no-repeat center/cover;
+}
+.box-hdr {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--primary-color);
+}
+.offnshp-box > p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  color: var(--primary-color);
+  margin: 38px auto;
+}
+.offnshp-box1 > p {
+  max-width: 482px;
+}
+.offnshp-box2 > p {
+  max-width: 461px;
+}
+.box-btn > .btn-secondary {
+  padding: 23px 42px 25px 40px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+.box-btn > .btn-secondary > i {
+  margin-left: 6px;
+}
 /* Response Section */
 @media screen and (max-width: 1750px) {
   .btn-primary {
@@ -1066,6 +1106,20 @@ a {
   .spcl-desc {
     margin-block: 9px 28px;
   }
+  /* Offer & Shop Section */
+  .offnshp-box {
+    padding: 146px 0 100px;
+    height: 460px;
+  }
+  .offnshp-box > p {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 30px auto;
+  }
+  .box-hdr {
+    font-size: 40px;
+    line-height: 20px;
+  }
 }
 @media screen and (max-width: 992px) {
   .col26,
@@ -1126,6 +1180,25 @@ a {
   /* Recommendation Section */
   .rec-sec {
     padding: 130px 0 53px;
+  }
+  /* Offer & Shop Section */
+  .offnshp-box {
+    padding: 100px 30px 63px;
+    height: 390px;
+  }
+  .box-hdr {
+    font-size: 28px;
+    line-height: 30px;
+  }
+  .offnshp-box > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px auto;
+  }
+  .box-btn > .btn-secondary {
+    padding: 22px 24px 25px 24px;
+    font-size: 14px;
+    letter-spacing: 3px;
   }
 }
 
@@ -1189,6 +1262,10 @@ a {
   }
   .bttl-desc span:last-child {
     font-size: 18px;
+  }
+  /*  Offer & Shop Section */
+  .offnshp-box {
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1304,6 +1381,16 @@ a {
   /* Recommendation Section */
   .rec-sec {
     padding: 60px 0 35px;
+  }
+  /*  Offer & Shop Section */
+  .offnshp-box {
+    padding: 100px 20px 63px;
+    height: 390px;
+  }
+  .box-btn > .btn-secondary {
+    padding: 15px 24px;
+    font-size: 14px;
+    letter-spacing: 3px;
   }
 }
 @media screen and (max-width: 420px) {
