@@ -886,6 +886,24 @@ a {
 .box-btn > .btn-secondary > i {
   margin-left: 6px;
 }
+/* Trending Section */
+.trend-sec {
+  padding: 117px 0;
+}
+.trend-img {
+  height: 439px;
+  border: 1px solid #80808080;
+}
+.trend-swiper .bttl-desc > span {
+  color: #000;
+}
+.price {
+  font-size: 20px;
+  color: var(--tertiary-color);
+}
+.price > span {
+  color: #57565b;
+}
 /* Response Section */
 @media screen and (max-width: 1750px) {
   .btn-primary {
@@ -1267,6 +1285,13 @@ a {
   .offnshp-box {
     margin-bottom: 30px;
   }
+  /* Trend Section */
+  .trend-sec {
+    padding: 90px 0;
+  }
+  .trend-img {
+    height: 370px;
+  }
 }
 @media screen and (max-width: 576px) {
   .title1 {
@@ -1391,6 +1416,16 @@ a {
     padding: 15px 24px;
     font-size: 14px;
     letter-spacing: 3px;
+  }
+  /* Trend Section */
+  .trend-sec {
+    padding: 60px 0;
+  }
+  .trend-sec {
+    padding: 60px 0;
+  }
+  .trend-img {
+    height: 300px;
   }
 }
 @media screen and (max-width: 420px) {
