@@ -1114,18 +1114,18 @@ a {
   /* Special Section */
   .spcl-img {
     margin: -20px auto 0;
-    max-width: 200px;
+    max-width: 256px;
   }
   .spcl-btl {
     max-width: 282px;
-    right: -43px;
-    bottom: -25px;
-    top: -24px;
+    right: -53px;
+    bottom: -29px;
+    top: -35px;
   }
   .spcl-text {
-    font-size: 78px;
-    right: -182px;
-    bottom: -32px;
+    font-size: 98px;
+    right: -225px;
+    bottom: -28px;
     top: 20px;
   }
   .spcl-rt {
@@ -1147,5 +1147,24 @@ a {
     font-size: 12px;
     background-color: #000;
     padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  /* Special Section */
+  .spcl-img {
+    margin: -20px auto 0;
+    max-width: 200px;
+  }
+  .spcl-btl {
+    max-width: 282px;
+    right: -43px;
+    bottom: -25px;
+    top: -24px;
+  }
+  .spcl-text {
+    font-size: 78px;
+    right: -182px;
+    bottom: -32px;
+    top: 20px;
   }
 }
