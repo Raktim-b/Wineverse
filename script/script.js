@@ -37,4 +37,6 @@ var swiper = new Swiper(".pop-swiper", {
       spaceBetween: 50,
     },
   },
+  
 });
+
