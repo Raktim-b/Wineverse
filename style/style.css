@@ -1290,7 +1290,7 @@ a {
     padding: 90px 0;
   }
   .trend-img {
-    height: 370px;
+    height: 400px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1424,9 +1424,7 @@ a {
   .trend-sec {
     padding: 60px 0;
   }
-  .trend-img {
-    height: 355px;
-  }
+  
 }
 @media screen and (max-width: 420px) {
   /* Special Section */
