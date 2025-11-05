@@ -707,6 +707,7 @@ a {
   }
   /* Banner Section */
   .swiper-container {
+    min-height: 80vh;
     padding: 120px 0 90px;
   }
   .banner-hdr {
