@@ -1004,6 +1004,9 @@ a {
   }
   /* Banner Section */
   /* Popular Section */
+  .popular-sec {
+    padding: 7.813vh 0 160px;
+  }
   .popular-hdr {
     margin-bottom: 40px;
   }
@@ -1107,6 +1110,9 @@ a {
     margin: 0 !important;
   }
   /* Popular Section */
+  .popular-sec {
+    padding: 7.813vh 0 150px;
+  }
   .bottle-typ {
     margin-top: 16px;
     font-size: 18px;
