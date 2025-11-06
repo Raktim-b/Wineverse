@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     effect: "fade",
     autoplay: {
       delay: 6000,
-      // disableOnInteraction: false,
+      disableOnInteraction: false,
     },
     navigation: {
       nextEl: ".swiper-button-next",
