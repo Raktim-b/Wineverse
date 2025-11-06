@@ -86,4 +86,16 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+  var swiperTesti = new Swiper(".testi-swiper", {
+    slidesPerView: 1,
+    loop: true,
+
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
 });

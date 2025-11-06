@@ -732,6 +732,7 @@ a {
 .spcl-btn > .btn-secondary {
   background-color: #000;
   padding: 12px 35px;
+  outline: none;
 }
 .spcl-btn > .btn-secondary:hover {
   border: 1px solid #000;
@@ -1064,6 +1065,51 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* Testimonial Section */
+.testi-sec {
+  background: url(../assets/Testimonial-bg.png) no-repeat center/cover;
+  padding: 100px 0 30px;
+}
+.testi-cntn {
+  max-width: 771px;
+  margin: 0 auto;
+}
+.comma {
+  max-width: 92px;
+  margin: 0 auto;
+}
+.comma > img {
+  width: 100%;
+  height: 100%;
+}
+.testi-swiper {
+  width: 100%;
+  height: 100%;
+}
+.testi-rating {
+  margin-block: 30px 10px;
+}
+.testi-container > p {
+  font-size: 40px;
+}
+.testi-img {
+  max-width: 146px;
+  height: 139px;
+  margin: 14px auto 11px;
+}
+.testi-img > img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+.testi-name {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.swiper-pagination-bullet-active {
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background-color: #57565b;
 }
 /* Response Section */
 @media screen and (max-width: 1750px) {
@@ -1487,6 +1533,14 @@ a {
   .sec-brand {
     border-right: none;
   }
+  /* Testimonial Section */
+  .testi-container > p {
+    font-size: 30px;
+  }
+  .testi-name {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1611,6 +1665,17 @@ a {
   /* Brand Section */
   .brand-sec {
     padding: 85px 0;
+  }
+  /* Testimonial Section */
+  .testi-sec {
+    padding: 60px 0 25px;
+  }
+  .testi-container > p {
+    font-size: 22px;
+  }
+  .testi-name {
+    font-size: 22px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1799,6 +1864,18 @@ a {
   }
   .sec-brand {
     padding-top: 0px;
+  }
+  /* Testimonial Section */
+
+  .testi-rating {
+    margin-block: 19px 10px;
+  }
+  .testi-container > p {
+    font-size: 16px;
+  }
+  .testi-name {
+    font-size: 16px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 420px) {
