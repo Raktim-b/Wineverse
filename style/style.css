@@ -32,7 +32,14 @@ a {
 .container {
   max-width: 1870px !important;
 }
-
+.col53 {
+  width: 53%;
+  padding: 0 10px;
+}
+.col47 {
+  width: 47%;
+  padding: 0 10px;
+}
 .col39 {
   width: 39%;
   padding: 0 10px;
@@ -104,6 +111,7 @@ a {
 }
 .btn-secondary {
   padding: 12px 26px;
+  font-size: 19px;
   outline: 2px solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 500;
@@ -142,11 +150,6 @@ a {
 .btn-secondary i {
   transition: all 0.4s ease;
 }
-/* .btn-secondary:hover > i {
-  transform: translateX(5px) scale(1.15);
-  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1);
-} */
-
 .btn-secondary:hover > i {
   animation: spinArrow 0.6s ease forwards;
 }
@@ -999,6 +1002,41 @@ a {
   height: 100%;
   object-fit: cover;
 }
+/* Club Section */
+.club-sec {
+  background: linear-gradient(
+    -135deg,
+    rgba(153, 20, 33, 0.95) 0%,
+    rgba(0, 0, 0, 0.9) 90%
+  );
+}
+.club-container {
+  padding: 114px 93px 139px;
+}
+.club-cntn {
+  border: 1px solid var(--primary-color);
+  padding: 93px 62px 103px 50px;
+}
+.club-hdr {
+  font-size: 70px;
+  color: var(--primary-color);
+}
+.club-cntn > p {
+  color: var(--primary-color);
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  margin-block: 35px 47px;
+}
+.club-img {
+  max-width: 1001px;
+  margin-left: auto;
+}
+.club-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 /* Response Section */
 @media screen and (max-width: 1750px) {
   .btn-primary {
@@ -1107,6 +1145,22 @@ a {
     max-width: 251px;
     right: -30px;
   }
+  /* Club Section */
+  .club-container {
+    padding: 30px 48px 33px;
+  }
+  .club-cntn {
+    padding: 73px 62px 77px 50px;
+  }
+  .club-hdr {
+    font-size: 58px;
+    line-height: 80px;
+  }
+  .club-cntn > p {
+    font-size: 19px;
+    line-height: 30px;
+    margin-block: 5px 23px;
+  }
 }
 
 @media screen and (max-width: 1400px) {
@@ -1176,6 +1230,13 @@ a {
   /* History Section */
   .history-sec {
     padding: 200px 0;
+  }
+  /* Club Section */
+  .club-cntn {
+    padding: 44px 54px 73px 47px;
+  }
+  .club-container {
+    padding: 30px 48px 33px;
   }
 }
 
@@ -1293,11 +1354,28 @@ a {
     margin-block: 20px 50px;
     max-width: 100%;
   }
+  /* Club Section */
+  .club-cntn {
+    padding: 21px 27px 31px 18px;
+  }
+  .club-hdr {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .club-cntn > p {
+    font-size: 17px;
+    line-height: 26px;
+    margin-block: 5px 15px;
+  }
 }
 @media screen and (max-width: 992px) {
   .col26,
   .col35,
   .col39 {
+    width: 100%;
+  }
+  .col53,
+  .col47 {
     width: 100%;
   }
   .col39 {
@@ -1447,6 +1525,19 @@ a {
   .trend-img {
     height: 400px;
   }
+  /* History Section */
+  .history-sec {
+    padding: 130px 0;
+  }
+  .history-hdr {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .history-cntn > p {
+    margin-block: 5px 29px;
+    font-size: 16px;
+    line-height: 30px;
+  }
   /* Vintage Section */
   .vint-sec {
     padding: 50px 0;
@@ -1471,18 +1562,15 @@ a {
     max-width: 158px;
     right: -38px;
   }
-  /* History Section */
-  .history-sec {
-    padding: 130px 0;
-  }
-  .history-hdr {
+
+  /* Club Section */
+  .club-hdr {
     font-size: 40px;
-    line-height: 50px;
+    line-height: 60px;
   }
-  .history-cntn > p {
-    margin-block: 5px 29px;
+  .club-cntn > p {
     font-size: 16px;
-    line-height: 30px;
+    line-height: 26px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -1616,6 +1704,19 @@ a {
   .trend-sec {
     padding: 60px 0;
   }
+  /* History Section */
+  .history-sec {
+    padding: 90px 0;
+  }
+  .history-hdr {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .history-cntn > p {
+    margin-block: 5px 18px;
+    font-size: 12px;
+    line-height: 19px;
+  }
   /* Vintage Section */
   .vint-sec {
     padding: 25px 0 40px;
@@ -1637,18 +1738,17 @@ a {
     max-width: 92px;
     right: -9px;
   }
-  /* History Section */
-  .history-sec {
-    padding: 90px 0;
+  /* Club Section */
+  .club-container {
+    padding: 29px 29px 33px;
   }
-  .history-hdr {
+  .club-hdr {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
   }
-  .history-cntn > p {
-    margin-block: 5px 18px;
+  .club-cntn > p {
     font-size: 12px;
-    line-height: 19px;
+    line-height: 22px;
   }
 }
 @media screen and (max-width: 420px) {
