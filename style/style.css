@@ -1996,6 +1996,12 @@ a {
   .title3 {
     font-size: 22px;
   }
+  /* Back To Top */
+  .back-to-top-fixed {
+    width: 42px;
+    height: 41px;
+    font-size: 21px;
+  }
   /* Banner Section */
   .swiper-container {
     min-height: 80vh;

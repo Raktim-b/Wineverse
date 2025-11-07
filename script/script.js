@@ -115,4 +115,5 @@ document.addEventListener("DOMContentLoaded", () => {
       behavior: "smooth",
     });
   });
+  AOS.init();
 });
