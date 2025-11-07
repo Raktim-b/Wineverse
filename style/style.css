@@ -184,6 +184,29 @@ a {
   font-weight: 600;
   color: var(--primary-color);
 }
+/* Back TO Top */
+.back-to-top-fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 56px;
+  height: 52px;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  box-shadow: 0 4px 15px #f4d7b7;
+  transition: all 0.3s ease;
+}
+
+.back-to-top-fixed.show {
+  display: flex;
+}
 /* Navbar Section */
 .hdr-sec {
   padding: 15px 0;
@@ -1105,6 +1128,7 @@ a {
   border-radius: 50%;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 .testi-name {
   font-size: 40px;
@@ -1542,7 +1566,15 @@ a {
   }
   /* Discount Section */
   .auto-scroll-itms {
-    font-size: 16px;
+    font-size: 18px;
+  }
+  @keyframes rightTOLeft {
+    0% {
+      right: -10%;
+    }
+    100% {
+      right: 130%;
+    }
   }
   /* Special Section */
   .spcl-img {
@@ -1669,6 +1701,16 @@ a {
   .box-cntn > p {
     font-size: 26px;
   }
+  /* Discount Section */
+  @keyframes rightTOLeft {
+    0% {
+      right: -10%;
+    }
+
+    100% {
+      right: 176%;
+    }
+  }
   /* Special Section */
   .spcl-img {
     margin: -20px auto 0;
@@ -1710,6 +1752,19 @@ a {
     letter-spacing: 3px;
   }
   /* Brand Section */
+  .brand-wrpr {
+    position: relative;
+  }
+  .brand-wrpr::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+  }
   .brand-item {
     /* border-bottom: 1px solid #00000080; */
     margin: 0 auto;
@@ -1764,6 +1819,16 @@ a {
   .bottle-typ {
     margin-top: 20px;
     font-size: 20px;
+  }
+  /* Discount Section */
+  @keyframes rightTOLeft {
+    0% {
+      right: -10%;
+    }
+
+    100% {
+      right: 234%;
+    }
   }
   /* Special Section */
   .spcl-img {
@@ -1910,7 +1975,7 @@ a {
     font-size: 16px;
   }
   .list-hdr {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
   .ftr-img {
@@ -1973,8 +2038,11 @@ a {
   }
 
   /* Discount Section */
+  .auto-scroll {
+    padding-block: 22px;
+  }
   .auto-scroll-itms {
-    font-size: 12px;
+    font-size: 16px;
   }
   .auto-scroll-itms > img {
     max-width: 14px;
@@ -1982,8 +2050,15 @@ a {
   .auto-scroll {
     padding-block: 16px;
   }
-  .auto-scroll-itms > img {
-    margin: 0 !important;
+
+  @keyframes rightTOLeft {
+    0% {
+      right: -10%;
+    }
+
+    100% {
+      right: 280%;
+    }
   }
   /* Popular Section */
   .popular-sec {
@@ -2155,7 +2230,7 @@ a {
     border-bottom: 1px solid var(--primary-color);
   }
   .list-hdr {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 11px;
   }
   .scl-list {
@@ -2163,7 +2238,7 @@ a {
   }
   .ftr-list > li,
   .ftr-list > li > a {
-    font-size: 12px;
+    font-size: 14px;
   }
   .ftr-list1-wrpr,
   .ftr-list2-wrpr,

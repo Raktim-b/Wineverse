@@ -98,4 +98,21 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".swiper-pagination",
     },
   });
+  // Back TO Top
+  const backToTopBtn = document.getElementById("backToTop");
+
+  // Show button when user scrolls down 300px
+  window.addEventListener("scroll", function () {
+    if (window.pageYOffset > 300) {
+      backToTopBtn.classList.add("show");
+    } else {
+      backToTopBtn.classList.remove("show");
+    }
+  });
+  backToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
 });
