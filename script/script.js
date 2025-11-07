@@ -98,6 +98,24 @@ document.addEventListener("DOMContentLoaded", () => {
       el: ".swiper-pagination",
     },
   });
+  var swiperProc = new Swiper(".proc-swiper", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".proc-next",
+      prevEl: ".proc-prev",
+    },
+    autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      992: {
+        slidesPerView: 3,
+      },
+    },
+  });
   // Back TO Top
   const backToTopBtn = document.getElementById("backToTop");
 
