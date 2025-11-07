@@ -184,6 +184,17 @@ a {
   font-weight: 600;
   color: var(--primary-color);
 }
+.cursor {
+  mix-blend-mode: difference;
+  height: 18px;
+  width: 18px;
+  cursor: none;
+  border-radius: 50%;
+  background: var(--quad-color);
+  transform: rotate(325deg);
+  position: fixed;
+  z-index: 9999;
+}
 /* Back TO Top */
 .back-to-top-fixed {
   position: fixed;
@@ -1026,7 +1037,7 @@ a {
   );
 }
 .club-container {
-  padding: 114px 93px 139px;
+  padding: 86px 93px 95px;
 }
 .club-cntn {
   border: 1px solid var(--primary-color);
@@ -1472,6 +1483,10 @@ a {
   .trend-sec {
     padding: 90px 0;
   }
+  /* History Section */
+  .history-sec {
+    padding: 200px 0;
+  }
   /* Vintage Section */
   .vint-sec {
     padding: 100px 0;
@@ -1484,10 +1499,7 @@ a {
     max-width: 232px;
     right: -24px;
   }
-  /* History Section */
-  .history-sec {
-    padding: 200px 0;
-  }
+
   /* Club Section */
   .club-cntn {
     padding: 44px 54px 73px 47px;
@@ -1677,6 +1689,9 @@ a {
   }
   .title3 {
     font-size: 32px;
+  }
+  .cursor {
+    display: none;
   }
   /* Banner Section */
   .swiper-container {

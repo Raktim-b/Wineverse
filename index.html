@@ -30,1592 +30,1685 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
-    <header class="hdr-sec">
-      <nav class="navbar navbar-expand-xl">
-        <div class="container">
-          <div class="nav-logo">
-            <a class="navbar-brand" href="index.html"
-              ><img src="./assets/Logo.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            data-bs-theme="dark"
-            data-bs-scroll="false"
-            id="navbarSupportedContent"
-          >
+    <div class="cursor"></div>
+    <div id="luxy">
+      <!-- Header Section -->
+      <header class="hdr-sec">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container">
+            <div class="nav-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img src="./assets/Logo.png" alt=""
+              /></a>
+            </div>
             <button
-              class="offcanvas-header me-auto mb-5"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
             </button>
-            <ul class="navbar-nav mx-auto align-items-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="index.html"
-                  target="_blank"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" target="_blank"
-                  >ABOUT US</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  target="_blank"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  PRODUCT <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">CONTACT</a>
-              </li>
-            </ul>
-            <div class="nav-icons d-flex align-items-center">
-              <div class="nav-btn">
-                <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
-              </div>
-              <div class="icon-part d-flex align-items-center">
-                <button class="search-btn">
-                  <img src="./assets/Search-btn.png" alt="" />
-                </button>
-                <a href="" class="love-icon">
-                  <img src="./assets/Love-icon.png" alt="" />
-                </a>
-                <a href="" class="cart-icon"
-                  ><img src="./assets/Cart-icon.png" alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Banner Section -->
-      <section class="banner-sec">
-        <!-- Swiper -->
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="swiper-container">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM GERMANY</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-1">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM ITALY</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-2">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM FRANCE</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-3">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM MEXICO</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-4">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM GREECE</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="swiper-container swiper-container-5">
-                <div class="banner-cntn">
-                  <div
-                    class="banner-hdr text-center"
-                    data-aos="fade-up"
-                    data-aos-duration="5000"
-                  >
-                    <h1 class="title1">Wine</h1>
-                    <span>FROM SPAIN</span>
-                    <a href="" class="btn-secondary"
-                      >Explore Collection
-                      <i class="fa-solid fa-arrow-right-long"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </section>
-      <!-- Feature Section -->
-      <section class="feature-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col35">
-              <div
-                class="box left-box"
-                data-aos="flip-right"
-                data-aos-duration="1000"
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-theme="dark"
+              data-bs-scroll="false"
+              id="navbarSupportedContent"
+            >
+              <button
+                class="offcanvas-header me-auto mb-5"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
               >
-                <div class="box-cntn text-center">
-                  <p>No Commitment</p>
-                  <h3 class="title3">WINE IN TIME CLUB</h3>
-                  <a href=""
-                    ><div class="text">
-                      <span>JOIN</span>
-                      <span>NOW</span>
-                    </div>
-                    <div class="clone">
-                      <span>JOIN</span>
-                      <span>NOW</span>
-                    </div></a
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="index.html"
+                    target="_blank"
+                    >Home</a
                   >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" target="_blank"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    target="_blank"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PRODUCT <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">CONTACT</a>
+                </li>
+              </ul>
+              <div class="nav-icons d-flex align-items-center">
+                <div class="nav-btn">
+                  <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+                </div>
+                <div class="icon-part d-flex align-items-center">
+                  <button class="search-btn">
+                    <img src="./assets/Search-btn.png" alt="" />
+                  </button>
+                  <a href="" class="love-icon">
+                    <img src="./assets/Love-icon.png" alt="" />
+                  </a>
+                  <a href="" class="cart-icon"
+                    ><img src="./assets/Cart-icon.png" alt=""
+                  /></a>
                 </div>
               </div>
             </div>
-            <div class="col26">
-              <div
-                class="box mid-box"
-                data-aos="flip-up"
-                data-aos-duration="1000"
-              >
-                <div class="box-cntn text-center">
-                  <p>Find your nearest branch</p>
-                  <h3 class="title3">VISITING KOWINE</h3>
-                  <a href=""
-                    ><div class="text">
-                      <span>FIND</span>
-                      <span>US</span>
-                    </div>
-                    <div class="clone">
-                      <span>FIND</span>
-                      <span>US</span>
-                    </div></a
-                  >
-                </div>
-              </div>
-            </div>
-            <div class="col39">
-              <div
-                class="box right-box"
-                data-aos="flip-right"
-                data-aos-duration="1000"
-              >
-                <div class="box-cntn text-center">
-                  <p>Virtual</p>
-                  <h3 class="title3">TASTING & EVENTS</h3>
-                  <a href=""
-                    ><div class="text">
-                      <span>LEARN</span>
-                      <span>MORE</span>
-                    </div>
-                    <div class="clone">
-                      <span>LEARN</span>
-                      <span>MORE</span>
-                    </div></a
-                  >
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
-      <!-- Discount Section -->
-      <section class="disc-sec">
-        <div class="auto-scroll d-flex align-items-center">
-          <div class="auto-scroll-itms scroll-item1" style="--i: 1">
-            <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
-          </div>
-          <div class="auto-scroll-itms scroll-item2" style="--i: 2">
-            <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
-          </div>
-          <div class="auto-scroll-itms scroll-item3" style="--i: 3">
-            <img src="./assets/Star.png" alt="" /> RICH HERITAGE
-          </div>
-          <div class="auto-scroll-itms scroll-item4" style="--i: 4">
-            <img src="./assets/Star.png" alt="" /> BEST OFFERS
-          </div>
-          <div class="auto-scroll-itms scroll-item5" style="--i: 5">
-            <img src="./assets/Star.png" alt="" class="img1" /> CHEERS DISCOUNTS
-            <img src="./assets/Star.png" alt="" />
-          </div>
-        </div>
-      </section>
-      <!-- Popular Section -->
-      <section class="popular-sec">
-        <div class="container">
-          <div class="popular-hdr text-center">
-            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
-              POPULAR CATEGORIES
-            </h2>
-            <img
-              src="./assets/Hdr-design.png"
-              alt=""
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="swiper pop-swiper">
-            <!-- Additional required wrapper -->
+        </nav>
+      </header>
+      <main>
+        <!-- Banner Section -->
+        <section class="banner-sec">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <!-- Slides -->
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img bottle1">
-                    <img src="./assets/Pop-botlle1.png" alt="" />
+                <div class="swiper-container">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM GERMANY</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">CHAMPAGNES</div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle2.png" alt="" />
+                <div class="swiper-container swiper-container-1">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM ITALY</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">HALF BOTTLES</div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle3.png" alt="" />
+                <div class="swiper-container swiper-container-2">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM FRANCE</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">RED WINES</div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle4.png" alt="" />
+                <div class="swiper-container swiper-container-3">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM MEXICO</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">ROSE WINES</div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle5.png" alt="" />
+                <div class="swiper-container swiper-container-4">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM GREECE</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">SPARKLING</div>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img bottle1">
-                    <img src="./assets/Pop-botlle1.png" alt="" />
+                <div class="swiper-container swiper-container-5">
+                  <div class="banner-cntn">
+                    <div
+                      class="banner-hdr text-center"
+                      data-aos="fade-up"
+                      data-aos-duration="5000"
+                    >
+                      <h1 class="title1">Wine</h1>
+                      <span>FROM SPAIN</span>
+                      <a href="" class="btn-secondary"
+                        >Explore Collection
+                        <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
                   </div>
-                  <div class="bottle-typ">CHAMPAGNES</div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle2.png" alt="" />
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+        </section>
+        <!-- Feature Section -->
+        <section class="feature-sec">
+          <div class="container">
+            <div class="row">
+              <div class="col35">
+                <div
+                  class="box left-box"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="box-cntn text-center">
+                    <p>No Commitment</p>
+                    <h3 class="title3">WINE IN TIME CLUB</h3>
+                    <a href=""
+                      ><div class="text">
+                        <span>JOIN</span>
+                        <span>NOW</span>
+                      </div>
+                      <div class="clone">
+                        <span>JOIN</span>
+                        <span>NOW</span>
+                      </div></a
+                    >
                   </div>
-                  <div class="bottle-typ">HALF BOTTLES</div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle3.png" alt="" />
+              <div class="col26">
+                <div
+                  class="box mid-box"
+                  data-aos="flip-up"
+                  data-aos-duration="1000"
+                >
+                  <div class="box-cntn text-center">
+                    <p>Find your nearest branch</p>
+                    <h3 class="title3">VISITING KOWINE</h3>
+                    <a href=""
+                      ><div class="text">
+                        <span>FIND</span>
+                        <span>US</span>
+                      </div>
+                      <div class="clone">
+                        <span>FIND</span>
+                        <span>US</span>
+                      </div></a
+                    >
                   </div>
-                  <div class="bottle-typ">RED WINES</div>
                 </div>
               </div>
-              <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle4.png" alt="" />
+              <div class="col39">
+                <div
+                  class="box right-box"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="box-cntn text-center">
+                    <p>Virtual</p>
+                    <h3 class="title3">TASTING & EVENTS</h3>
+                    <a href=""
+                      ><div class="text">
+                        <span>LEARN</span>
+                        <span>MORE</span>
+                      </div>
+                      <div class="clone">
+                        <span>LEARN</span>
+                        <span>MORE</span>
+                      </div></a
+                    >
                   </div>
-                  <div class="bottle-typ">ROSE WINES</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-container text-center">
-                  <div class="bottle-img">
-                    <img src="./assets/Pop-botlle5.png" alt="" />
-                  </div>
-                  <div class="bottle-typ">SPARKLING</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Special Section -->
-      <section class="spcl-sec">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 col-xl-8">
-              <div class="spcl-img">
-                <img
-                  src="./assets/Special-img.png"
-                  alt=""
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-sine"
-                />
-                <div class="spcl-btl">
+        </section>
+        <!-- Discount Section -->
+        <section class="disc-sec">
+          <div class="auto-scroll d-flex align-items-center">
+            <div class="auto-scroll-itms scroll-item1" style="--i: 1">
+              <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
+            </div>
+            <div class="auto-scroll-itms scroll-item2" style="--i: 2">
+              <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
+            </div>
+            <div class="auto-scroll-itms scroll-item3" style="--i: 3">
+              <img src="./assets/Star.png" alt="" /> RICH HERITAGE
+            </div>
+            <div class="auto-scroll-itms scroll-item4" style="--i: 4">
+              <img src="./assets/Star.png" alt="" /> BEST OFFERS
+            </div>
+            <div class="auto-scroll-itms scroll-item5" style="--i: 5">
+              <img src="./assets/Star.png" alt="" class="img1" /> CHEERS
+              DISCOUNTS
+              <img src="./assets/Star.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Popular Section -->
+        <section class="popular-sec">
+          <div class="container">
+            <div class="popular-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                POPULAR CATEGORIES
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper pop-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img bottle1">
+                      <img src="./assets/Pop-botlle1.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">CHAMPAGNES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle2.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">HALF BOTTLES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle3.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">RED WINES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle4.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">ROSE WINES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle5.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">SPARKLING</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img bottle1">
+                      <img src="./assets/Pop-botlle1.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">CHAMPAGNES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle2.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">HALF BOTTLES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle3.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">RED WINES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle4.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">ROSE WINES</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-container text-center">
+                    <div class="bottle-img">
+                      <img src="./assets/Pop-botlle5.png" alt="" />
+                    </div>
+                    <div class="bottle-typ">SPARKLING</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Special Section -->
+        <section class="spcl-sec">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-xl-8">
+                <div class="spcl-img">
                   <img
-                    src="./assets/Special-bottle.png"
+                    src="./assets/Special-img.png"
                     alt=""
-                    data-aos="fade-down"
+                    data-aos="fade-right"
                     data-aos-duration="1000"
                     data-aos-easing="ease-in-sine"
                   />
-                </div>
-                <div class="spcl-text">Special</div>
-              </div>
-            </div>
-            <div class="col-12 col-xl-4">
-              <div
-                class="spcl-rt"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-              >
-                <div class="spcl-hdr">
-                  <span>ITALIAN BUBBLES PAR</span> EXCELLENCE
-                </div>
-                <div class="spcl-desc">
-                  <p>16.5% Alchohol level</p>
-                  <p>6g/L Acidity</p>
-                  <p>
-                    Nullam quis ante. Pellentesque libero tortor, tincidunt et,
-                    tinciduntamet est.in hac habitasse
-                  </p>
-                  <p>
-                    platea distumst. Praesent nec nisl a purus blandit viverra
-                  </p>
-                </div>
-                <div class="spcl-btn">
-                  <a href="" class="btn-secondary"
-                    >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
+                  <div class="spcl-btl">
+                    <img
+                      src="./assets/Special-bottle.png"
+                      alt=""
+                      data-aos="fade-down"
+                      data-aos-duration="1000"
+                      data-aos-easing="ease-in-sine"
+                    />
+                  </div>
+                  <div class="spcl-text">Special</div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Recommendation Section -->
-      <section class="rec-sec">
-        <div class="container">
-          <div class="rec-hdr text-center">
-            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
-              RECOMMENDATIONS
-            </h2>
-            <img
-              src="./assets/Hdr-design.png"
-              alt=""
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="swiper rec-swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img1.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$100.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img2.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$214.22</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img3.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <div class="review">(0 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$100.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img4.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <div class="review">(0 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$35.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img1.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$100.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img2.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$214.22</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img3.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <div class="review">(0 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$100.00</span>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img">
-                    <img src="./assets/Rec-bottle-img4.png" alt="" />
-                    <div class="label">
-                      <div class="temp">Hot</div>
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <li><img src="./assets/Grey-star.png" alt="" /></li>
-                    <div class="review">(0 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
-                    <span>$35.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Offer & Shop Section -->
-      <section class="offnshp-sec">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-md-6">
-              <div
-                class="offnshp-box offnshp-box1 text-center"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-sine"
-              >
-                <div class="box-hdr text-center">NEW CUSTOMER?</div>
-                <p>
-                  To get you started, we,re offering $40 off your first order
-                  plus FREE delivery
-                </p>
-                <div class="box-btn">
-                  <a href="" class="btn-secondary"
-                    >WELCOME OFFER <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-md-6">
-              <div
-                class="offnshp-box offnshp-box2 text-center"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-sine"
-              >
-                <div class="box-hdr text-center">MIXED WINE CASES</div>
-                <p>
-                  Our popular Pre-mixed wine cases cater for all tastes and
-                  budgets
-                </p>
-                <div class="box-btn">
-                  <a href="" class="btn-secondary"
-                    >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Trending Section -->
-      <section class="trend-sec">
-        <div class="container">
-          <div class="rec-hdr text-center">
-            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
-              TRENDING PRODUCTS
-            </h2>
-            <img
-              src="./assets/Hdr-design.png"
-              alt=""
-              data-aos="fade-left"
-              data-aos-duration="1000"
-            />
-          </div>
-          <div class="swiper trend-swiper">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img1.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
-                  </div>
-                  <div class="price"><span>$130.00 </span>$125.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img2.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
-                  </div>
-                  <div class="price"><span>$100.00 </span>$90.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img3.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span>
-                  </div>
-                  <div class="price">$214.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img4.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span
-                      >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
-                      MAGNA</span
-                    >
-                  </div>
-                  <div class="price">$100.00 - $180.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img1.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
-                  </div>
-                  <div class="price"><span>$130.00 </span>$125.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img2.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
-                  </div>
-                  <div class="price"><span>$100.00 </span>$90.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img3.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span>
-                  </div>
-                  <div class="price">$214.00</div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bottle-box text-center">
-                  <div class="rec-bottle-img trend-img">
-                    <img src="./assets/Trend-bottle-img4.png" alt="" />
-                    <div class="label">
-                      <div class="discount">-22%</div>
-                    </div>
-                    <div class="hover-icon d-flex flex-column gap-2">
-                      <button><img src="./assets/Eye-btn.png" alt="" /></button>
-                      <button>
-                        <img src="./assets/Heart-btn.png" alt="" />
-                      </button>
-                      <button>
-                        <img src="./assets/Cart-btn.png" alt="" />
-                      </button>
-                    </div>
-                  </div>
-                  <ul
-                    class="rating list-unstyled d-flex gap-2 justify-content-center"
-                  >
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <li><img src="./assets/Red-star.png" alt="" /></li>
-                    <div class="review">(1 review)</div>
-                  </ul>
-                  <div class="bttl-desc text-center">
-                    <span
-                      >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
-                      MAGNA</span
-                    >
-                  </div>
-                  <div class="price">$100.00 - $180.00</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- History Section -->
-      <section
-        class="history-sec"
-        data-aos="fade-right"
-        data-aos-duration="1000"
-      >
-        <div class="container">
-          <div class="row">
-            <div class="col-5 col-sm-6"></div>
-            <div class="col-7 col-sm-6">
-              <div
-                class="history-cntn"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-sine"
-              >
-                <div class="history-hdr">
-                  FINE WINE, SPIRITS & COURMET SINCE 1968
-                </div>
-                <p>
-                  Nullam quis ante, Pellentesque libero tincidunt et,
-                  tinciduntamet est. in hac habitasse platea dictumst. Praesent
-                  nec nisi a purus blandit viverra
-                </p>
-                <div class="spcl-btn">
-                  <a href="" class="btn-secondary"
-                    >DISCOVERY <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Vintage Section -->
-      <section class="vint-sec">
-        <div class="container">
-          <div class="row align-items-center flex-column-reverse flex-xl-row">
-            <div class="col-12 col-xl-5">
-              <div
-                class="vint-left-sec"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                <div class="vint-hdr">CLOS MAREY- MONGE 2021 VINTAGE</div>
-                <p>
-                  A very rare vintage with limited availability, now on VIP
-                  pre-sale. Join the waitlist today! The very best of Burgundy.
-                  Available in 3 or 6-bottle collections at special prices.
-                </p>
-                <div class="spcl-btn">
-                  <a href="" class="btn-secondary"
-                    >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-xl-7">
-              <div
-                class="vint-right-sec"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-easing="ease-in-sine"
-              >
-                <div class="vint-img1">
-                  <img src="./assets/Vint-img1.png" alt="" />
-                  <div class="vint-img2">
-                    <img src="./assets/Vint-img2.png" alt="" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Club Section -->
-      <section class="club-sec">
-        <div class="row align-items-center flex-column-reverse flex-lg-row">
-          <div class="col47">
-            <div class="club-container">
-              <div
-                class="club-cntn text-center"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-              >
-                <div class="club-hdr">WINE CLUB</div>
-                <p>
-                  WE WANT TO MAKE YOUR JOURNRY ENJOYABLE AS POSSIBLE AS WE
-                  DESIGNED OUR WIND CLUB IN YOUR MIND.
-                </p>
-                <div class="spcl-btn">
-                  <a href="" class="btn-secondary"
-                    >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col53">
-            <div class="club-img">
-              <img src="./assets/Club-img.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Brand Section -->
-      <section class="brand-sec">
-        <div class="popular-hdr text-center">
-          <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
-            TOP BRANDS
-          </h2>
-          <img
-            src="./assets/Hdr-design.png"
-            alt=""
-            data-aos="fade-left"
-            data-aos-duration="1000"
-          />
-        </div>
-        <div class="brand-wrpr" data-aos="fade-down" data-aos-duration="500">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-6 col-lg-3">
+              <div class="col-12 col-xl-4">
                 <div
-                  class="brand-item"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
-                >
-                  <div class="brand-img-wrpr brand-img-wrpr1">
-                    <img src="./assets/brand1.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3">
-                <div
-                  class="brand-item sec-brand"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                >
-                  <div class="brand-img-wrpr brand-img-wrpr2">
-                    <img src="./assets/brand2.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3">
-                <div
-                  class="brand-item"
-                  data-aos="fade-down"
-                  data-aos-duration="1000"
-                >
-                  <div class="brand-img-wrpr brand-img-wrpr3">
-                    <img src="./assets/brand3.png" alt="" />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-lg-3">
-                <div
-                  class="brand-item last-brand"
+                  class="spcl-rt"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                 >
-                  <div class="brand-img-wrpr brand-img-wrpr4">
-                    <img src="./assets/brand4.png" alt="" />
+                  <div class="spcl-hdr">
+                    <span>ITALIAN BUBBLES PAR</span> EXCELLENCE
+                  </div>
+                  <div class="spcl-desc">
+                    <p>16.5% Alchohol level</p>
+                    <p>6g/L Acidity</p>
+                    <p>
+                      Nullam quis ante. Pellentesque libero tortor, tincidunt
+                      et, tinciduntamet est.in hac habitasse
+                    </p>
+                    <p>
+                      platea distumst. Praesent nec nisl a purus blandit viverra
+                    </p>
+                  </div>
+                  <div class="spcl-btn">
+                    <a href="" class="btn-secondary"
+                      >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- Testimonial Section -->
-      <section class="testi-sec" data-aos="fade-left" data-aos-duration="1000">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 col-sm-8">
-              <div class="testi-cntn">
-                <div class="swiper testi-swiper">
-                  <!-- Additional required wrapper -->
-                  <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">
-                      <div class="testi-container text-center">
-                        <div class="comma">
-                          <img src="./assets/Comma.png" alt="" />
-                        </div>
-                        <ul
-                          class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
-                        >
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li>
-                            <img src="./assets/Disable-star.png" alt="" />
-                          </li>
-                        </ul>
-                        <p>
-                          Blood bank canine teeth larnyax occupational therapist
-                          onchologist optician plaque...
-                        </p>
-                        <div class="testi-img">
-                          <img src="./assets/Testi-img1.png" alt="" />
-                        </div>
-                        <div class="testi-name">ANN SMITH</div>
+        </section>
+        <!-- Recommendation Section -->
+        <section class="rec-sec">
+          <div class="container">
+            <div class="rec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                RECOMMENDATIONS
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper rec-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
                       </div>
                     </div>
-                    <div class="swiper-slide">
-                      <div class="testi-container text-center">
-                        <div class="comma">
-                          <img src="./assets/Comma.png" alt="" />
-                        </div>
-                        <ul
-                          class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
-                        >
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li>
-                            <img src="./assets/Disable-star.png" alt="" />
-                          </li>
-                        </ul>
-                        <p>
-                          Dental hygiene and patient comfort exceeded my
-                          expectations — highly professional.
-                        </p>
-                        <div class="testi-img">
-                          <img src="./assets/Testi-img2.jpg" alt="" />
-                        </div>
-                        <div class="testi-name">JAMES WILSON</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="testi-container text-center">
-                        <div class="comma">
-                          <img src="./assets/Comma.png" alt="" />
-                        </div>
-                        <ul
-                          class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
-                        >
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li>
-                            <img src="./assets/Disable-star.png" alt="" />
-                          </li>
-                        </ul>
-                        <p>
-                          The team made me feel completely at ease. Quick,
-                          gentle, and very informative.
-                        </p>
-                        <div class="testi-img">
-                          <img src="./assets/Testi-img3.jpg" alt="" />
-                        </div>
-                        <div class="testi-name">MARIA GONZALEZ</div>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="testi-container text-center">
-                        <div class="comma">
-                          <img src="./assets/Comma.png" alt="" />
-                        </div>
-                        <ul
-                          class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
-                        >
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li><img src="./assets/Yellow-star.png" alt="" /></li>
-                          <li>
-                            <img src="./assets/Disable-star.png" alt="" />
-                          </li>
-                        </ul>
-                        <p>
-                          Amazing experience! Friendly staff, clean environment,
-                        </p>
-                        <div class="testi-img">
-                          <img src="./assets/Testi-img4.jpg" alt="" />
-                        </div>
-                        <div class="testi-name">DAVID MILLER</div>
-                      </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$100.00</span>
                     </div>
                   </div>
-                  <!-- If we need pagination -->
-                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$214.22</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <div class="review">(0 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$100.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <div class="review">(0 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$35.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$100.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$214.22</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <div class="review">(0 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$100.00</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img">
+                      <img src="./assets/Rec-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="temp">Hot</div>
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <li><img src="./assets/Grey-star.png" alt="" /></li>
+                      <div class="review">(0 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>IN HAC HABITASSE PLATEA DICTUMST TEMPOR VET</span>
+                      <span>$35.00</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-0 col-sm-4"></div>
           </div>
-        </div>
-      </section>
-      <!-- Sign Up Section -->
-      <section class="sign-sec">
-        <div class="sign-sec-wrpr">
+        </section>
+        <!-- Offer & Shop Section -->
+        <section class="offnshp-sec">
           <div class="container">
             <div class="row">
-              <div class="col-12 col-lg-6">
+              <div class="col-12 col-md-6">
                 <div
-                  class="signup-left"
+                  class="offnshp-box offnshp-box1 text-center"
                   data-aos="fade-right"
                   data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
                 >
-                  <div class="signup-hdr">SIGN UP FOR OUR NEWSLETTERS</div>
+                  <div class="box-hdr text-center">NEW CUSTOMER?</div>
                   <p>
-                    Keep updated with the latest & greatest from our wonderful
-                    world of wine.
+                    To get you started, we,re offering $40 off your first order
+                    plus FREE delivery
                   </p>
+                  <div class="box-btn">
+                    <a href="" class="btn-secondary"
+                      >WELCOME OFFER <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
                 </div>
               </div>
-              <div class="col-12 col-lg-6">
-                <form
-                  action=""
-                  class="signup-form d-flex"
+              <div class="col-12 col-md-6">
+                <div
+                  class="offnshp-box offnshp-box2 text-center"
                   data-aos="fade-left"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-sine"
                 >
-                  <input
-                    type="email"
-                    name=""
-                    id="mail-input"
-                    placeholder="Your email address"
-                  />
-                  <input type="button" value="SUBMIT" id="submit-btn" />
-                </form>
+                  <div class="box-hdr text-center">MIXED WINE CASES</div>
+                  <p>
+                    Our popular Pre-mixed wine cases cater for all tastes and
+                    budgets
+                  </p>
+                  <div class="box-btn">
+                    <a href="" class="btn-secondary"
+                      >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      <button id="backToTop" class="back-to-top-fixed fw-bolder">
-        <i class="fa-solid fa-angle-up"></i>
-      </button>
-    </main>
-    <!-- Footer Section -->
-    <footer class="ftr-sec">
-      <div class="footer-top">
-        <div class="container">
-          <div class="row">
-            <div class="col20">
-              <div class="ftr-list1-wrpr">
-                <div class="list-hdr">CONTACT US</div>
-                <ul class="ftr-list1 ftr-list list-unstyled">
-                  <li>
-                    <a href="" class="ftr-links"
-                      >1501 Main St, ste 50 Tewksbury MA 01876
-                    </a>
-                  </li>
-                  <li><a href="" class="ftr-links">email@example.com</a></li>
-                  <li><a href="" class="ftr-links">+1 526 220 0459</a></li>
-                  <li>Mon-Fri: 8:00 - 21:00</li>
-                  <li>Sat: 8:00 - 21:00</li>
-                  <li>Sun: 8:00 - 21:00</li>
-                </ul>
-                <ul class="scl-list list-unstyled d-flex align-items-center">
-                  <li class="scl-links">
-                    <a href=""><img src="./assets/Scl-link1.png" alt="" /></a>
-                  </li>
-                  <li class="scl-links">
-                    <a href=""><img src="./assets/Scl-link2.png" alt="" /></a>
-                  </li>
-                  <li class="scl-links">
-                    <a href=""><img src="./assets/Scl-links3.png" alt="" /></a>
-                  </li>
-                  <li class="scl-links">
-                    <a href=""><img src="./assets/Scl-links4.png" alt="" /></a>
-                  </li>
-                </ul>
+        </section>
+        <!-- Trending Section -->
+        <section class="trend-sec">
+          <div class="container">
+            <div class="rec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                TRENDING PRODUCTS
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper trend-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
+                    </div>
+                    <div class="price"><span>$130.00 </span>$125.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
+                    </div>
+                    <div class="price"><span>$100.00 </span>$90.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span
+                      >
+                    </div>
+                    <div class="price">$214.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
+                        MAGNA</span
+                      >
+                    </div>
+                    <div class="price">$100.00 - $180.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
+                    </div>
+                    <div class="price"><span>$130.00 </span>$125.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
+                    </div>
+                    <div class="price"><span>$100.00 </span>$90.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span
+                      >
+                    </div>
+                    <div class="price">$214.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="rec-bottle-img trend-img">
+                      <img src="./assets/Trend-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
+                        MAGNA</span
+                      >
+                    </div>
+                    <div class="price">$100.00 - $180.00</div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col20">
-              <div class="ftr-list2-wrpr">
-                <div class="list-hdr">CUSTOMER SERVICES</div>
-                <ul class="ftr-list2 ftr-list list-unstyled">
-                  <li>
-                    <a href="" class="ftr-links">Contact & FAQ</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Track YOUR Order</a></li>
-                  <li><a href="" class="ftr-links">Returns & Refunds</a></li>
-                  <li>
-                    <a href="" class="ftr-links">Shipping & Delivery</a>
-                  </li>
-                  <li>
-                    <a href="" class="ftr-links">Interest Free Finance</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Cipmoney</a></li>
-                </ul>
+          </div>
+        </section>
+        <!-- History Section -->
+        <section
+          class="history-sec"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-5 col-sm-6"></div>
+              <div class="col-7 col-sm-6">
+                <div
+                  class="history-cntn"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="history-hdr">
+                    FINE WINE, SPIRITS & COURMET SINCE 1968
+                  </div>
+                  <p>
+                    Nullam quis ante, Pellentesque libero tincidunt et,
+                    tinciduntamet est. in hac habitasse platea dictumst.
+                    Praesent nec nisi a purus blandit viverra
+                  </p>
+                  <div class="spcl-btn">
+                    <a href="" class="btn-secondary"
+                      >DISCOVERY <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col20">
-              <div class="ftr-list3-wrpr">
-                <div class="list-hdr">ABOUT US</div>
-                <ul class="ftr-list3 ftr-list list-unstyled">
-                  <li>
-                    <a href="" class="ftr-links">Our Story</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Team</a></li>
-                  <li><a href="" class="ftr-links">Press</a></li>
-                  <li>
-                    <a href="" class="ftr-links">Jobs</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Blogs</a></li>
-                  <li><a href="" class="ftr-links">Contacts</a></li>
-                </ul>
+          </div>
+        </section>
+        <!-- Vintage Section -->
+        <section class="vint-sec">
+          <div class="container">
+            <div class="row align-items-center flex-column-reverse flex-xl-row">
+              <div class="col-12 col-xl-5">
+                <div
+                  class="vint-left-sec"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="vint-hdr">CLOS MAREY- MONGE 2021 VINTAGE</div>
+                  <p>
+                    A very rare vintage with limited availability, now on VIP
+                    pre-sale. Join the waitlist today! The very best of
+                    Burgundy. Available in 3 or 6-bottle collections at special
+                    prices.
+                  </p>
+                  <div class="spcl-btn">
+                    <a href="" class="btn-secondary"
+                      >SHOP NOW <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-7">
+                <div
+                  class="vint-right-sec"
+                  data-aos="fade-left"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-sine"
+                >
+                  <div class="vint-img1">
+                    <img src="./assets/Vint-img1.png" alt="" />
+                    <div class="vint-img2">
+                      <img src="./assets/Vint-img2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col20">
-              <div class="ftr-list4-wrpr">
-                <div class="list-hdr">DISCOVER MORE</div>
-                <ul class="ftr-list4 ftr-list list-unstyled">
-                  <li>
-                    <a href="" class="ftr-links">Twitter</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Facebook</a></li>
-                  <li><a href="" class="ftr-links">Instagram</a></li>
-                  <li>
-                    <a href="" class="ftr-links">Pinterest</a>
-                  </li>
-                  <li><a href="" class="ftr-links">Blogs</a></li>
-                </ul>
+          </div>
+        </section>
+        <!-- Club Section -->
+        <section class="club-sec">
+          <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div class="col47">
+              <div class="club-container">
+                <div
+                  class="club-cntn text-center"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="club-hdr">WINE CLUB</div>
+                  <p>
+                    WE WANT TO MAKE YOUR JOURNRY ENJOYABLE AS POSSIBLE AS WE
+                    DESIGNED OUR WIND CLUB IN YOUR MIND.
+                  </p>
+                  <div class="spcl-btn">
+                    <a href="" class="btn-secondary"
+                      >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="col20">
-              <div class="ftr-list5-wrpr">
-                <div class="list-hdr">DOWNLOAD OUR APP</div>
-                <div class="down-sec">
-                  <a href="" class="apple-wrpr"
-                    ><img src="./assets/Down-img1.png" alt=""
-                  /></a>
-                  <a href="" class="play-wrpr"
-                    ><img src="./assets/Down-img2.png" alt=""
-                  /></a>
+            <div class="col53">
+              <div class="club-img">
+                <img src="./assets/Club-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand Section -->
+        <section class="brand-sec">
+          <div class="popular-hdr text-center">
+            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+              TOP BRANDS
+            </h2>
+            <img
+              src="./assets/Hdr-design.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="brand-wrpr" data-aos="fade-down" data-aos-duration="500">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr1">
+                      <img src="./assets/brand1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item sec-brand"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr2">
+                      <img src="./assets/brand2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr3">
+                      <img src="./assets/brand3.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item last-brand"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr4">
+                      <img src="./assets/brand4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonial Section -->
+        <section
+          class="testi-sec"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+        >
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-8">
+                <div class="testi-cntn">
+                  <div class="swiper testi-swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide">
+                        <div class="testi-container text-center">
+                          <div class="comma">
+                            <img src="./assets/Comma.png" alt="" />
+                          </div>
+                          <ul
+                            class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
+                          >
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Disable-star.png" alt="" />
+                            </li>
+                          </ul>
+                          <p>
+                            Blood bank canine teeth larnyax occupational
+                            therapist onchologist optician plaque...
+                          </p>
+                          <div class="testi-img">
+                            <img src="./assets/Testi-img1.png" alt="" />
+                          </div>
+                          <div class="testi-name">ANN SMITH</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testi-container text-center">
+                          <div class="comma">
+                            <img src="./assets/Comma.png" alt="" />
+                          </div>
+                          <ul
+                            class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
+                          >
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Disable-star.png" alt="" />
+                            </li>
+                          </ul>
+                          <p>
+                            Dental hygiene and patient comfort exceeded my
+                            expectations — highly professional.
+                          </p>
+                          <div class="testi-img">
+                            <img src="./assets/Testi-img2.jpg" alt="" />
+                          </div>
+                          <div class="testi-name">JAMES WILSON</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testi-container text-center">
+                          <div class="comma">
+                            <img src="./assets/Comma.png" alt="" />
+                          </div>
+                          <ul
+                            class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
+                          >
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Disable-star.png" alt="" />
+                            </li>
+                          </ul>
+                          <p>
+                            The team made me feel completely at ease. Quick,
+                            gentle, and very informative.
+                          </p>
+                          <div class="testi-img">
+                            <img src="./assets/Testi-img3.jpg" alt="" />
+                          </div>
+                          <div class="testi-name">MARIA GONZALEZ</div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="testi-container text-center">
+                          <div class="comma">
+                            <img src="./assets/Comma.png" alt="" />
+                          </div>
+                          <ul
+                            class="testi-rating list-unstyled d-flex gap-2 justify-content-center"
+                          >
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Yellow-star.png" alt="" />
+                            </li>
+                            <li>
+                              <img src="./assets/Disable-star.png" alt="" />
+                            </li>
+                          </ul>
+                          <p>
+                            Amazing experience! Friendly staff, clean
+                            environment,
+                          </p>
+                          <div class="testi-img">
+                            <img src="./assets/Testi-img4.jpg" alt="" />
+                          </div>
+                          <div class="testi-name">DAVID MILLER</div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-0 col-sm-4"></div>
+            </div>
+          </div>
+        </section>
+        <!-- Sign Up Section -->
+        <section class="sign-sec">
+          <div class="sign-sec-wrpr">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div
+                    class="signup-left"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="signup-hdr">SIGN UP FOR OUR NEWSLETTERS</div>
+                    <p>
+                      Keep updated with the latest & greatest from our wonderful
+                      world of wine.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <form
+                    action=""
+                    class="signup-form d-flex"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <input
+                      type="email"
+                      name=""
+                      id="mail-input"
+                      placeholder="Your email address"
+                    />
+                    <input type="button" value="SUBMIT" id="submit-btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <button id="backToTop" class="back-to-top-fixed fw-bolder">
+          <i class="fa-solid fa-angle-up"></i>
+        </button>
+      </main>
+      <!-- Footer Section -->
+      <footer class="ftr-sec">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col20">
+                <div class="ftr-list1-wrpr">
+                  <div class="list-hdr">CONTACT US</div>
+                  <ul class="ftr-list1 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links"
+                        >1501 Main St, ste 50 Tewksbury MA 01876
+                      </a>
+                    </li>
+                    <li><a href="" class="ftr-links">email@example.com</a></li>
+                    <li><a href="" class="ftr-links">+1 526 220 0459</a></li>
+                    <li>Mon-Fri: 8:00 - 21:00</li>
+                    <li>Sat: 8:00 - 21:00</li>
+                    <li>Sun: 8:00 - 21:00</li>
+                  </ul>
+                  <ul class="scl-list list-unstyled d-flex align-items-center">
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link1.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link2.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links3.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links4.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20">
+                <div class="ftr-list2-wrpr">
+                  <div class="list-hdr">CUSTOMER SERVICES</div>
+                  <ul class="ftr-list2 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Contact & FAQ</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Track YOUR Order</a></li>
+                    <li><a href="" class="ftr-links">Returns & Refunds</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                      <a href="" class="ftr-links">Interest Free Finance</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Cipmoney</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20">
+                <div class="ftr-list3-wrpr">
+                  <div class="list-hdr">ABOUT US</div>
+                  <ul class="ftr-list3 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Our Story</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Team</a></li>
+                    <li><a href="" class="ftr-links">Press</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Jobs</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                    <li><a href="" class="ftr-links">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20">
+                <div class="ftr-list4-wrpr">
+                  <div class="list-hdr">DISCOVER MORE</div>
+                  <ul class="ftr-list4 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Twitter</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Facebook</a></li>
+                    <li><a href="" class="ftr-links">Instagram</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Pinterest</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20">
+                <div class="ftr-list5-wrpr">
+                  <div class="list-hdr">DOWNLOAD OUR APP</div>
+                  <div class="down-sec">
+                    <a href="" class="apple-wrpr"
+                      ><img src="./assets/Down-img1.png" alt=""
+                    /></a>
+                    <a href="" class="play-wrpr"
+                      ><img src="./assets/Down-img2.png" alt=""
+                    /></a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer-btm">
-        <div class="container">
-          <div
-            class="ftr-btm-wrpr d-flex flex-column flex-md-row align-items-center justify-content-between"
-          >
-            <div class="ftr-img">
-              <a href="index.html">
-                <img src="./assets/Footer-logo.png" alt=""
-              /></a>
-            </div>
-            <div class="ftr-btm-right d-flex align-items-center">
-              <div class="land-sec d-flex align-items-center">
-                <img src="./assets/USA.png" alt="" />
-                <span>Eng/USD</span>
+        <div class="footer-btm">
+          <div class="container">
+            <div
+              class="ftr-btm-wrpr d-flex flex-column flex-md-row align-items-center justify-content-between"
+            >
+              <div class="ftr-img">
+                <a href="index.html">
+                  <img src="./assets/Footer-logo.png" alt=""
+                /></a>
               </div>
-              <div class="pay-list">
-                <img src="./assets/Pay-lists.png" alt="" />
+              <div class="ftr-btm-right d-flex align-items-center">
+                <div class="land-sec d-flex align-items-center">
+                  <img src="./assets/USA.png" alt="" />
+                  <span>Eng/USD</span>
+                </div>
+                <div class="pay-list">
+                  <img src="./assets/Pay-lists.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -1626,6 +1719,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Luxy Js -->
+    <script src="dist/js/luxy.js" charset="utf-8"></script>
     <!-- Custome Js -->
     <script src="./script/script.js"></script>
   </body>

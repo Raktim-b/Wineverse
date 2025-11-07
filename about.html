@@ -16,6 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Awsome CDN -->
     <link
       rel="stylesheet"
@@ -28,330 +30,882 @@
     <link rel="stylesheet" href="./style/aboutstyle.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="hdr-sec">
-      <nav class="navbar navbar-expand-xl">
-        <div class="container">
-          <div class="nav-logo">
-            <a class="navbar-brand" href="index.html"
-              ><img src="./assets/Logo.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            data-bs-theme="dark"
-            data-bs-scroll="false"
-            id="navbarSupportedContent"
-          >
+    <div id="luxy">
+      <div class="cursor"></div>
+      <!-- Header Section -->
+      <header class="hdr-sec">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container">
+            <div class="nav-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img src="./assets/Logo.png" alt=""
+              /></a>
+            </div>
             <button
-              class="offcanvas-header me-auto mb-5"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
             </button>
-            <ul class="navbar-nav mx-auto align-items-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="index.html"
-                  target="_blank"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="about.html" target="_blank"
-                  >ABOUT US</a
-                >
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  PRODUCT <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">CONTACT</a>
-              </li>
-            </ul>
-            <div class="nav-icons d-flex align-items-center">
-              <div class="nav-btn">
-                <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-theme="dark"
+              data-bs-scroll="false"
+              id="navbarSupportedContent"
+            >
+              <button
+                class="offcanvas-header me-auto mb-5"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="index.html"
+                    target="_blank"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="about.html" target="_blank"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PRODUCT <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">CONTACT</a>
+                </li>
+              </ul>
+              <div class="nav-icons d-flex align-items-center">
+                <div class="nav-btn">
+                  <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+                </div>
+                <div class="icon-part d-flex align-items-center">
+                  <button class="search-btn">
+                    <img src="./assets/Search-btn.png" alt="" />
+                  </button>
+                  <a href="" class="love-icon">
+                    <img src="./assets/Love-icon.png" alt="" />
+                  </a>
+                  <a href="" class="cart-icon"
+                    ><img src="./assets/Cart-icon.png" alt=""
+                  /></a>
+                </div>
               </div>
-              <div class="icon-part d-flex align-items-center">
-                <button class="search-btn">
-                  <img src="./assets/Search-btn.png" alt="" />
-                </button>
-                <a href="" class="love-icon">
-                  <img src="./assets/Love-icon.png" alt="" />
-                </a>
-                <a href="" class="cart-icon"
-                  ><img src="./assets/Cart-icon.png" alt=""
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Banner Section -->
+        <section
+          class="banner-sec d-flex align-items-center justify-content-center"
+        >
+          <div class="banner-cntn">
+            <h1 class="title1" data-aos="fade-up" data-aos-duration="6000">
+              About Us
+            </h1>
+            <ul class="brdcrumb list-unstyled d-flex mx-auto">
+              <li><a href="index.html" class="brd-link">Home></a></li>
+              <li><a href="about.html" class="brd-link">About Us</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- About Section -->
+        <section class="about-sec">
+          <div class="container container2">
+            <div class="about-hdr sec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                ABOUT US
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+              <h3 class="title1">Read About Our Rich History</h3>
+              <p>
+                We’ve enjoying winemaking since 1994 and creating incredible
+                wine.
+              </p>
+            </div>
+            <div
+              class="about-img"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src="./assets/about/About-img.png" alt="" />
+            </div>
+            <div class="about-cntn">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <p
+                    class="left-text"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit, sed quia consequuntur magni dolores eos qui
+                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                    qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+                    velit, sed quia non numquam eius modi tempora incidunt ut
+                    labore et dolore magnam aliquam quaerat voluptatem. Ut enim
+                    ad minima veniam, quis nostrum exercitationem ullam corporis
+                    suscipit laboriosam, nisi ut aliquid ex ea commodi
+                    consequatur. numquam eius modi tempora incidunt ut labore et
+                    dolore magnam aliquam quaerat
+                  </p>
+                </div>
+                <div class="col-12 col-md-6">
+                  <p
+                    class="right-text"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit
+                    aut fugit, sed quia consequuntur magni dolores eos qui
+                    ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                    qui dolorem ipsum quia dolor sit amet, consectetur,<span>
+                      numquam eius modi tempora incidunt ut labore et dolore
+                      magnam aliquam quaerat voluptatem. Ut enim ad minima
+                      veniam, quis nostrum exercitationem ullam corporis
+                      suscipit laboriosam, nisi ut aliquid ex ea commodi
+                      consequatur</span
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Years Section -->
+        <section class="yr-sec">
+          <div class="container container2">
+            <div class="row">
+              <div class="col20">
+                <div class="yr-wrpr" data-aos="fade-right">
+                  <div class="yr-hdr">1994</div>
+                  <p>Conversion of the open land to vineyards</p>
+                </div>
+              </div>
+              <div class="col20">
+                <div
+                  class="yr-wrpr"
+                  data-aos="fade-right"
+                  data-aos-duration="300"
+                >
+                  <div class="yr-hdr">1996</div>
+                  <p>Wineverse foundation by a group of 6 friends.</p>
+                </div>
+              </div>
+              <div class="col20">
+                <div
+                  class="yr-wrpr"
+                  data-aos="fade-right"
+                  data-aos-duration="600"
+                >
+                  <div class="yr-hdr">1997</div>
+                  <p>Vineyards conversion to organic farming.</p>
+                </div>
+              </div>
+              <div class="col20">
+                <div
+                  class="yr-wrpr before-last-yr-wrpr"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                >
+                  <div class="yr-hdr">2005</div>
+                  <p>The first release of 500 award-winning wines.</p>
+                </div>
+              </div>
+              <div class="col20">
+                <div
+                  class="yr-wrpr last-yr-wrpr"
+                  data-aos="fade-right"
+                  data-aos-duration="1200"
+                >
+                  <div class="yr-hdr">2011</div>
+                  <p>Opening of wine tastings in our cellars to the public</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Process Section -->
+        <section class="proc-sec">
+          <div class="container">
+            <div class="proc-hdr sec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                HOW DO WE CREATE WINES
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+              <h3 class="title1">Winemaking Process</h3>
+              <p>Learn more about our winemaking process</p>
+            </div>
+            <div class="process-wrpr">
+              <div class="swiper proc-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img1.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 1.</span>Harvesting</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img2.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 2.</span>Crushing and Pressing</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img3.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 3.</span>Farmentation</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img4.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 4.</span>Clarification</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img5.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 5.</span>Aging and Maturation</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img6.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 6.</span>Filtration</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img7.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 7.</span>Bottling</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img8.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 8.</span>Labeling & Packaging</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="proc-container">
+                      <div class="proc-img">
+                        <img src="./assets/about/Proc-img9.png" alt="" />
+                      </div>
+                      <div class="proc-btm d-flex justify-content-between">
+                        <p><span>Step 9.</span>Quality Testing & Serving</p>
+                        <p>+</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev proc-prev"></div>
+                <div class="swiper-button-next proc-next"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Club Section -->
+        <section class="club-sec">
+          <div class="row align-items-center flex-column-reverse flex-lg-row">
+            <div class="col47">
+              <div class="club-container">
+                <div
+                  class="club-cntn text-center"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                >
+                  <div class="club-hdr">WINE CLUB</div>
+                  <p>
+                    WE WANT TO MAKE YOUR JOURNRY ENJOYABLE AS POSSIBLE AS WE
+                    DESIGNED OUR WIND CLUB IN YOUR MIND.
+                  </p>
+                  <div class="club-btn">
+                    <a href="" class="btn-secondary"
+                      >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col53">
+              <div class="club-img">
+                <img src="./assets/Club-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Discount Section -->
+        <section class="disc-sec">
+          <div class="auto-scroll d-flex align-items-center">
+            <div class="auto-scroll-itms scroll-item1" style="--i: 1">
+              <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
+            </div>
+            <div class="auto-scroll-itms scroll-item2" style="--i: 2">
+              <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
+            </div>
+            <div class="auto-scroll-itms scroll-item3" style="--i: 3">
+              <img src="./assets/Star.png" alt="" /> RICH HERITAGE
+            </div>
+            <div class="auto-scroll-itms scroll-item4" style="--i: 4">
+              <img src="./assets/Star.png" alt="" /> BEST OFFERS
+            </div>
+            <div class="auto-scroll-itms scroll-item5" style="--i: 5">
+              <img src="./assets/Star.png" alt="" class="img1" /> CHEERS
+              DISCOUNTS
+              <img src="./assets/Star.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Professional Section -->
+        <section class="prof-sec">
+          <div class="container container2">
+            <div class="prof-hdr sec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+                OUR TEAM
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+              <h3 class="title1">Meet Our Professional Team</h3>
+              <p>
+                Our team is our proud. Each of the tam members is dedicated to
+                creating the finest wines.
+              </p>
+            </div>
+            <div class="prof-cntn">
+              <div class="row">
+                <div class="col-12 col-lg-4">
+                  <div
+                    class="prof-left"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="prof-img">
+                      <img src="./assets/about/Prof-img1.png" alt="" />
+                    </div>
+                    <div class="prof-left-hdr">Discover</div>
+                    <div class="prof-ledt-hdr2">John Smirth</div>
+                    <p>
+                      Sed ut perspiciatis unde omnis iste natus error sit
+                      voluptatem accusantium doloremque laudantium, totam rem
+                      aperiam, eaque ipsa quae ab illo inventore.
+                    </p>
+                    <div class="club-btn">
+                      <a href="" class="btn-secondary"
+                        >LEARN MORE <i class="fa-solid fa-arrow-right-long"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-8">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="500"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img1.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">Head Winemaker</div>
+                            <div class="prof-ledt-hdr2">Jason Arnolds</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img3.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">Sommelier</div>
+                            <div class="prof-ledt-hdr2">Samantha Welesh</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="500"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img2.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">Tour Guide</div>
+                            <div class="prof-ledt-hdr2">Albert Drendt</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img4.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">
+                              Tasting Room Manager
+                            </div>
+                            <div class="prof-ledt-hdr2">Carlos Kiersh</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="500"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img5.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">Head of Marketing</div>
+                            <div class="prof-ledt-hdr2">Eliza Anderson</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div
+                        class="test-sec"
+                        data-aos="fade-left"
+                        data-aos-duration="1000"
+                      >
+                        <div class="test-top d-flex align-items-center">
+                          <div class="test-img">
+                            <img
+                              src="./assets/about/Testi-round-img6.png"
+                              alt=""
+                            />
+                          </div>
+                          <div class="test-hdr">
+                            <div class="prof-left-hdr">
+                              Head Guest Relations
+                            </div>
+                            <div class="prof-ledt-hdr2">Dran Willliams</div>
+                          </div>
+                        </div>
+                        <p>
+                          Sed ut perspiciatis unde omnis iste natus error sit
+                          voluptatem accusantium doloremque laudantium, totam
+                          rem aperiam
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand Section -->
+        <section class="brand-sec">
+          <div class="brand-hdr sec-hdr text-center">
+            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+              OUR BRANDS
+            </h2>
+            <img
+              src="./assets/Hdr-design.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="brand-wrpr" data-aos="fade-down" data-aos-duration="500">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr1">
+                      <img src="./assets/brand1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item sec-brand"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr2">
+                      <img src="./assets/brand2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr3">
+                      <img src="./assets/brand3.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item last-brand"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr4">
+                      <img src="./assets/brand4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sign Up Section -->
+        <section class="sign-sec">
+          <div class="sign-sec-wrpr">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div
+                    class="signup-left"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="signup-hdr">SIGN UP FOR OUR NEWSLETTERS</div>
+                    <p>
+                      Keep updated with the latest & greatest from our wonderful
+                      world of wine.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <form
+                    action=""
+                    class="signup-form d-flex"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-sine"
+                  >
+                    <input
+                      type="email"
+                      name=""
+                      id="mail-input"
+                      placeholder="Your email address"
+                    />
+                    <input type="button" value="SUBMIT" id="submit-btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <button id="backToTop" class="back-to-top-fixed fw-bolder">
+        <i class="fa-solid fa-angle-up"></i>
+      </button>
+      <!-- Footer Section -->
+      <footer class="ftr-sec">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col20 ftr-col">
+                <div class="ftr-list1-wrpr">
+                  <div class="list-hdr">CONTACT US</div>
+                  <ul class="ftr-list1 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links"
+                        >1501 Main St, ste 50 Tewksbury MA 01876
+                      </a>
+                    </li>
+                    <li><a href="" class="ftr-links">email@example.com</a></li>
+                    <li><a href="" class="ftr-links">+1 526 220 0459</a></li>
+                    <li>Mon-Fri: 8:00 - 21:00</li>
+                    <li>Sat: 8:00 - 21:00</li>
+                    <li>Sun: 8:00 - 21:00</li>
+                  </ul>
+                  <ul class="scl-list list-unstyled d-flex align-items-center">
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link1.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link2.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links3.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links4.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list2-wrpr">
+                  <div class="list-hdr">CUSTOMER SERVICES</div>
+                  <ul class="ftr-list2 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Contact & FAQ</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Track YOUR Order</a></li>
+                    <li><a href="" class="ftr-links">Returns & Refunds</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                      <a href="" class="ftr-links">Interest Free Finance</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Cipmoney</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list3-wrpr">
+                  <div class="list-hdr">ABOUT US</div>
+                  <ul class="ftr-list3 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Our Story</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Team</a></li>
+                    <li><a href="" class="ftr-links">Press</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Jobs</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                    <li><a href="" class="ftr-links">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list4-wrpr">
+                  <div class="list-hdr">DISCOVER MORE</div>
+                  <ul class="ftr-list4 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Twitter</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Facebook</a></li>
+                    <li><a href="" class="ftr-links">Instagram</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Pinterest</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list5-wrpr">
+                  <div class="list-hdr">DOWNLOAD OUR APP</div>
+                  <div class="down-sec">
+                    <a href="" class="apple-wrpr"
+                      ><img src="./assets/Down-img1.png" alt=""
+                    /></a>
+                    <a href="" class="play-wrpr"
+                      ><img src="./assets/Down-img2.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="container">
+            <div
+              class="ftr-btm-wrpr d-flex flex-column flex-md-row align-items-center justify-content-between"
+            >
+              <div class="ftr-img">
+                <a href="index.html">
+                  <img src="./assets/Footer-logo.png" alt=""
                 /></a>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Banner Section -->
-      <section
-        class="banner-sec d-flex align-items-center justify-content-center"
-      >
-        <div class="banner-cntn">
-          <h1 class="title1">About Us</h1>
-          <ul class="brdcrumb list-unstyled d-flex mx-auto">
-            <li><a href="index.html" class="brd-link">Home></a></li>
-            <li><a href="about.html" class="brd-link">About Us</a></li>
-          </ul>
-        </div>
-      </section>
-      <!-- About Section -->
-      <section class="about-sec">
-        <div class="container container2">
-          <div class="about-hdr sec-hdr text-center">
-            <h2 class="title2">ABOUT US</h2>
-            <img src="./assets/Hdr-design.png" alt="" />
-            <h3 class="title1">Read About Our Rich History</h3>
-            <p>
-              We’ve enjoying winemaking since 1994 and creating incredible wine.
-            </p>
-          </div>
-          <div class="about-img">
-            <img src="./assets/about/About-img.png" alt="" />
-          </div>
-          <div class="about-cntn">
-            <div class="row">
-              <div class="col-12 col-md-6">
-                <p class="left-text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur, adipisci velit, sed quia non
-                  numquam eius modi tempora incidunt ut labore et dolore magnam
-                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-                  nostrum exercitationem ullam corporis suscipit laboriosam,
-                  nisi ut aliquid ex ea commodi consequatur. numquam eius modi
-                  tempora incidunt ut labore et dolore magnam aliquam quaerat
-                </p>
-              </div>
-              <div class="col-12 col-md-6">
-                <p class="right-text">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudantium, totam rem aperiam, eaque
-                  ipsa quae ab illo inventore veritatis et quasi architecto
-                  beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
-                  quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                  consequuntur magni dolores eos qui ratione voluptatem sequi
-                  nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
-                  dolor sit amet, consectetur,<span>
-                    numquam eius modi tempora incidunt ut labore et dolore
-                    magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                    quis nostrum exercitationem ullam corporis suscipit
-                    laboriosam, nisi ut aliquid ex ea commodi consequatur</span
-                  >
-                </p>
+              <div class="ftr-btm-right d-flex align-items-center">
+                <div class="land-sec d-flex align-items-center">
+                  <img src="./assets/USA.png" alt="" />
+                  <span>Eng/USD</span>
+                </div>
+                <div class="pay-list">
+                  <img src="./assets/Pay-lists.png" alt="" />
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Years Section -->
-      <section class="yr-sec">
-        <div class="container container2">
-          <div class="row">
-            <div class="col20">
-              <div class="yr-wrpr">
-                <div class="yr-hdr">1994</div>
-                <p>Conversion of the open land to vineyards</p>
-              </div>
-            </div>
-            <div class="col20">
-              <div class="yr-wrpr">
-                <div class="yr-hdr">1996</div>
-                <p>Wineverse foundation by a group of 6 friends.</p>
-              </div>
-            </div>
-            <div class="col20">
-              <div class="yr-wrpr">
-                <div class="yr-hdr">1997</div>
-                <p>Vineyards conversion to organic farming.</p>
-              </div>
-            </div>
-            <div class="col20">
-              <div class="yr-wrpr before-last-yr-wrpr">
-                <div class="yr-hdr">2005</div>
-                <p>The first release of 500 award-winning wines.</p>
-              </div>
-            </div>
-            <div class="col20">
-              <div class="yr-wrpr last-yr-wrpr">
-                <div class="yr-hdr">2011</div>
-                <p>Opening of wine tastings in our cellars to the public</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Process Section -->
-      <section class="proc-sec">
-        <div class="container">
-          <div class="proc-hdr sec-hdr text-center">
-            <h2 class="title2">HOW DO WE CREATE WINES</h2>
-            <img src="./assets/Hdr-design.png" alt="" />
-            <h3 class="title1">Winemaking Process</h3>
-            <p>Learn more about our winemaking process</p>
-          </div>
-          <div class="process-wrpr">
-            <div class="swiper proc-swiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img1.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 1.</span>Harvesting</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img2.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 2.</span>Crushing and Pressing</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img3.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 3.</span>Farmentation</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img4.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 4.</span>Clarification</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img5.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 5.</span>Aging and Maturation</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img6.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 6.</span>Filtration</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img7.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 7.</span>Bottling</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img8.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 8.</span>Labeling & Packaging</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <div class="proc-container">
-                    <div class="proc-img">
-                      <img src="./assets/about/Proc-img9.png" alt="" />
-                    </div>
-                    <div class="proc-btm d-flex justify-content-between">
-                      <p><span>Step 9.</span>Quality Testing & Serving</p>
-                      <p>+</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-button-prev proc-prev"></div>
-              <div class="swiper-button-next proc-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </footer>
+    </div>
     <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Luxy Js -->
+    <script src="dist/js/luxy.js" charset="utf-8"></script>
     <!-- Custome Js -->
     <script src="./script/script.js"></script>
   </body>
