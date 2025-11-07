@@ -277,6 +277,12 @@ a {
   width: 0%;
   transition: all 0.5s linear;
 }
+.down-arrow:hover::before {
+  width: 0% !important;
+}
+.down-arrow:hover > i {
+  transform: rotate(180deg);
+}
 .nav-link:hover {
   color: var(--primary-color) !important;
   transform: translateY(-2px);
@@ -1120,6 +1126,7 @@ a {
     font-size: 16px;
     line-height: 23px;
   }
+  /* Year Section */
   .yr-wrpr > p {
     font-size: 16px;
     letter-spacing: 0.6px;

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style/productstyle.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="hdr-sec">
+      <nav class="navbar navbar-expand-xl">
+        <div class="container">
+          <div class="nav-logo">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./assets/Logo.png" alt=""
+            /></a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            data-bs-theme="dark"
+            data-bs-scroll="false"
+            id="navbarSupportedContent"
+          >
+            <button
+              class="offcanvas-header me-auto mb-5"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+            <ul class="navbar-nav mx-auto align-items-center">
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="index.html"
+                  target="_blank"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html" target="_blank"
+                  >ABOUT US</a
+                >
+              </li>
+              <li class="nav-item dropdown d-flex align-items-center gap-2">
+                <a class="nav-link active" href="product.html" target="_blank">
+                  PRODUCT
+                </a>
+                <a
+                  class="nav-link dropdown-toggle down-arrow"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">BLOG</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" target="_blank">CONTACT</a>
+              </li>
+            </ul>
+            <div class="nav-icons d-flex align-items-center">
+              <div class="nav-btn">
+                <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+              </div>
+              <div class="icon-part d-flex align-items-center">
+                <button class="search-btn">
+                  <img src="./assets/Search-btn.png" alt="" />
+                </button>
+                <a href="" class="love-icon">
+                  <img src="./assets/Love-icon.png" alt="" />
+                </a>
+                <a href="" class="cart-icon"
+                  ><img src="./assets/Cart-icon.png" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Banner Section -->
+      <section
+        class="banner-sec d-flex align-items-center justify-content-center"
+      >
+        <div class="banner-cntn">
+          <h1 class="title1" data-aos="fade-up" data-aos-duration="6000">
+            Our Products
+          </h1>
+          <ul class="brdcrumb list-unstyled d-flex mx-auto">
+            <li><a href="index.html" class="brd-link">Home></a></li>
+            <li><a href="product.html" class="brd-link">Our Products</a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- Discount Section -->
+      <section class="disc-sec">
+        <div class="auto-scroll d-flex align-items-center">
+          <div class="auto-scroll-itms scroll-item1" style="--i: 1">
+            <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
+          </div>
+          <div class="auto-scroll-itms scroll-item2" style="--i: 2">
+            <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
+          </div>
+          <div class="auto-scroll-itms scroll-item3" style="--i: 3">
+            <img src="./assets/Star.png" alt="" /> RICH HERITAGE
+          </div>
+          <div class="auto-scroll-itms scroll-item4" style="--i: 4">
+            <img src="./assets/Star.png" alt="" /> BEST OFFERS
+          </div>
+          <div class="auto-scroll-itms scroll-item5" style="--i: 5">
+            <img src="./assets/Star.png" alt="" class="img1" /> CHEERS DISCOUNTS
+            <img src="./assets/Star.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom Js -->
+    <script src="./script/script.js"></script>
+  </body>
+</html>
