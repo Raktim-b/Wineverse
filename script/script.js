@@ -5,17 +5,40 @@ document.addEventListener("DOMContentLoaded", () => {
     targets: ".luxy-el",
     wrapperSpeed: 0.08,
   });
-  var swiper = new Swiper(".mySwiper", {
+
+  const swiper = new Swiper(".mySwiper", {
     loop: true,
-    effect: "fade",
     autoplay: {
-      delay: 6000,
+      delay: 4000,
       disableOnInteraction: false,
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+    speed: 800,
+    on: {
+      slideChangeTransitionStart: function () {
+        // Fade out text of all slides
+        document.querySelectorAll(".slide-text").forEach((el) => {
+          el.classList.remove("active");
+          el.classList.add("fade-out");
+        });
+      },
+      slideChangeTransitionEnd: function () {
+        // Add animation to active slide text
+        const activeSlide = this.slides[this.activeIndex];
+        const activeText = activeSlide.querySelector(".slide-text");
+        if (activeText) {
+          activeText.classList.remove("fade-out");
+          activeText.classList.add("active");
+        }
+      },
     },
+  });
+
+  // Initialize first slide text
+  window.addEventListener("load", () => {
+    const firstText = document.querySelector(
+      ".swiper-slide-active .slide-text"
+    );
+    if (firstText) firstText.classList.add("active");
   });
   var swiperPop = new Swiper(".pop-swiper", {
     slidesPerView: 1,
