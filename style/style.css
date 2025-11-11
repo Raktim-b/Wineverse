@@ -383,7 +383,7 @@ a {
 
 .slide-text.active {
   opacity: 0;
-  transform: scale(3);
+  transform: scale(2.3);
 }
 
 .slide-text.fade-out {
@@ -1714,10 +1714,10 @@ a {
   .swiper-button-prev {
     display: none;
   }
-.slide-text.active {
-  opacity: 0;
-  transform: scale(2);
-}
+  .slide-text.active {
+    opacity: 0;
+    transform: scale(2);
+  }
   /* Popular Section */
   .popular-sec {
     padding: 7.813vh 0 160px;
@@ -1912,9 +1912,8 @@ a {
     font-size: 21px;
   }
   /* Banner Section */
-  .swiper-container {
+  .banner {
     min-height: 80vh;
-    padding: 120px 0 90px;
   }
   .banner-hdr {
     max-width: 396px;
@@ -1928,10 +1927,10 @@ a {
   .slide-text > .title1 > span {
     font-size: 35px;
   }
-.slide-text.active {
-  opacity: 0;
-  transform: scale(1.6);
-}
+  .slide-text.active {
+    opacity: 0;
+    transform: scale(1.6);
+  }
   /* Feature Section */
   .feature-sec {
     margin-top: -90px;

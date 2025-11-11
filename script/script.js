@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loop: true,
     autoplay: {
       delay: 4000,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     speed: 800,
@@ -43,9 +44,11 @@ document.addEventListener("DOMContentLoaded", () => {
   var swiperPop = new Swiper(".pop-swiper", {
     slidesPerView: 1,
     // spaceBetween: 30,
+    speed: 3000,
     loop: true,
     autoplay: {
-      delay: 2500,
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -71,8 +74,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    speed: 3000,
     autoplay: {
-      delay: 2500,
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -95,8 +100,10 @@ document.addEventListener("DOMContentLoaded", () => {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
+    speed: 3000,
     autoplay: {
-      delay: 2500,
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -121,6 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     autoplay: {
       delay: 2500,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     pagination: {
@@ -130,13 +138,15 @@ document.addEventListener("DOMContentLoaded", () => {
   var swiperProc = new Swiper(".proc-swiper", {
     slidesPerView: 2,
     spaceBetween: 10,
+    speed: 3000,
     loop: true,
     navigation: {
       nextEl: ".proc-next",
       prevEl: ".proc-prev",
     },
     autoplay: {
-      delay: 2000,
+      delay: 0,
+      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
       disableOnInteraction: false,
     },
     breakpoints: {
@@ -146,6 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+  
   // Back TO Top
   const backToTopBtn = document.getElementById("backToTop");
 
