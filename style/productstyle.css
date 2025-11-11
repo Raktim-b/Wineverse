@@ -450,7 +450,7 @@ a {
 .gift-img > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 .gift-container > p {
   font-size: 24px;
@@ -494,7 +494,40 @@ a {
 .gift-btn > .btn-secondary:hover {
   color: var(--tertiary-color);
 }
+/* Best Seller Section */
+.best-sec {
+  padding-bottom: 112px;
+}
+.best-hdr {
+  margin-bottom: 20px;
+}
+.best-cntn {
+  max-width: 321px;
+  margin: 0 auto;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.best-img {
+  width: 100%;
+  margin-bottom: 11px;
+}
+.best-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.best-cntn > p {
+  font-size: 24px;
+  margin: 0 !important;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+}
+.best-btn > .btn-secondary {
+  padding: 13px 24.5px !important;
+}
 /* Responsive Section */
 @media screen and (max-width: 1750px) {
   .btn-primary {
@@ -675,6 +708,10 @@ a {
   .option-btn {
     margin-bottom: 25px !important;
   }
+  /* Best Section */
+  .best-cntn > p {
+    font-size: 20px;
+  }
 }
 @media screen and (max-width: 768px) {
   .col20 {
@@ -727,6 +764,13 @@ a {
   .gift-container > p {
     font-size: 18px;
     margin-top: 12px;
+  }
+  /* Best Section */
+  .best-cntn{
+    height: 90px;
+  }
+  .best-cntn > p {
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -793,7 +837,7 @@ a {
   .spot-sec {
     padding-bottom: 34px;
   }
-  .spot-img{
+  .spot-img {
     height: 270px;
   }
   .spot-container > p {
@@ -816,4 +860,15 @@ a {
     border-radius: 30px;
     font-size: 14px;
   }
+  /* Best Sectioin */
+  .best-cntn{
+    height: 50px;
+  }
+  .best-cntn > p {
+    font-size: 14px;
+  }
+  .best-btn {
+        margin-top: 10px;
+    }
 }
+
