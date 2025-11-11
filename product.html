@@ -16,6 +16,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Awsome CDN -->
     <link
       rel="stylesheet"
@@ -28,503 +30,1261 @@
     <link rel="stylesheet" href="./style/productstyle.css" />
   </head>
   <body>
-    <!-- Header Section -->
-    <header class="hdr-sec">
-      <nav class="navbar navbar-expand-xl">
-        <div class="container">
-          <div class="nav-logo">
-            <a class="navbar-brand" href="index.html"
-              ><img src="./assets/Logo.png" alt=""
-            /></a>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
-          </button>
-          <div
-            class="offcanvas offcanvas-end"
-            data-bs-theme="dark"
-            data-bs-scroll="false"
-            id="navbarSupportedContent"
-          >
+    <div id="luxy">
+      <div class="cursor"></div>
+      <!-- Header Section -->
+      <header class="hdr-sec">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container">
+            <div class="nav-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img src="./assets/Logo.png" alt=""
+              /></a>
+            </div>
             <button
-              class="offcanvas-header me-auto mb-5"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
             >
-              <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
             </button>
-            <ul class="navbar-nav mx-auto align-items-center">
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="index.html"
-                  target="_blank"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html" target="_blank"
-                  >ABOUT US</a
-                >
-              </li>
-              <li class="nav-item dropdown d-flex align-items-center gap-2">
-                <a class="nav-link active" href="product.html" target="_blank">
-                  PRODUCT
-                </a>
-                <a
-                  class="nav-link dropdown-toggle down-arrow"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="fa-solid fa-angle-down"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">BLOG</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" target="_blank">CONTACT</a>
-              </li>
-            </ul>
-            <div class="nav-icons d-flex align-items-center">
-              <div class="nav-btn">
-                <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-theme="dark"
+              data-bs-scroll="false"
+              id="navbarSupportedContent"
+            >
+              <button
+                class="offcanvas-header me-auto mb-5"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="index.html"
+                    target="_blank"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" target="_blank"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center gap-2">
+                  <a
+                    class="nav-link active"
+                    href="product.html"
+                    target="_blank"
+                  >
+                    PRODUCT
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle down-arrow"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">CONTACT</a>
+                </li>
+              </ul>
+              <div class="nav-icons d-flex align-items-center">
+                <div class="nav-btn">
+                  <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+                </div>
+                <div class="icon-part d-flex align-items-center">
+                  <button class="search-btn">
+                    <img src="./assets/Search-btn.png" alt="" />
+                  </button>
+                  <a href="" class="love-icon">
+                    <img src="./assets/Love-icon.png" alt="" />
+                  </a>
+                  <a href="" class="cart-icon"
+                    ><img src="./assets/Cart-icon.png" alt=""
+                  /></a>
+                </div>
               </div>
-              <div class="icon-part d-flex align-items-center">
-                <button class="search-btn">
-                  <img src="./assets/Search-btn.png" alt="" />
-                </button>
-                <a href="" class="love-icon">
-                  <img src="./assets/Love-icon.png" alt="" />
-                </a>
-                <a href="" class="cart-icon"
-                  ><img src="./assets/Cart-icon.png" alt=""
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Banner Section -->
+        <section
+          class="banner-sec d-flex align-items-center justify-content-center"
+        >
+          <div class="banner-cntn">
+            <h1 class="title1" data-aos="fade-up" data-aos-duration="6000">
+              Our Products
+            </h1>
+            <ul class="brdcrumb list-unstyled d-flex mx-auto">
+              <li><a href="index.html" class="brd-link">Home></a></li>
+              <li><a href="product.html" class="brd-link">Our Products</a></li>
+            </ul>
+          </div>
+        </section>
+        <!-- Discount Section -->
+        <section class="disc-sec">
+          <div class="auto-scroll d-flex align-items-center">
+            <div class="auto-scroll-itms scroll-item1" style="--i: 1">
+              <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
+            </div>
+            <div class="auto-scroll-itms scroll-item2" style="--i: 2">
+              <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
+            </div>
+            <div class="auto-scroll-itms scroll-item3" style="--i: 3">
+              <img src="./assets/Star.png" alt="" /> RICH HERITAGE
+            </div>
+            <div class="auto-scroll-itms scroll-item4" style="--i: 4">
+              <img src="./assets/Star.png" alt="" /> BEST OFFERS
+            </div>
+            <div class="auto-scroll-itms scroll-item5" style="--i: 5">
+              <img src="./assets/Star.png" alt="" class="img1" /> CHEERS
+              DISCOUNTS
+              <img src="./assets/Star.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Options Section -->
+        <section class="option-sec">
+          <div class="container container2">
+            <div class="row">
+              <div class="col-6 col-md-4">
+                <div class="option-btn text-center" data-aos="fade-up">
+                  <a href="" class="btn-secondary">ALL WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="400"
+                >
+                  <a href="" class="btn-secondary">RED WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="800"
+                >
+                  <a href="" class="btn-secondary">WHITE WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1200"
+                >
+                  <a href="" class="btn-secondary">ROSE WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="1600"
+                >
+                  <a href="" class="btn-secondary">CHAMPAGNE SPARKLING</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <a href="" class="btn-secondary">SWEETS WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center bottom-row"
+                  data-aos="fade-up"
+                  data-aos-duration="2400"
+                >
+                  <a href="" class="btn-secondary">INDIAN WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center bottom-row"
+                  data-aos="fade-up"
+                  data-aos-duration="2800"
+                >
+                  <a href="" class="btn-secondary">ITALIAN WINES</a>
+                </div>
+              </div>
+              <div class="col-6 col-md-4">
+                <div
+                  class="option-btn text-center bottom-row"
+                  data-aos="fade-up"
+                  data-aos-duration="3200"
+                >
+                  <a href="" class="btn-secondary">FRENCH WINES</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Spotlight Section -->
+        <section class="spot-sec">
+          <div class="container container2">
+            <div class="spot-hdr text-center">
+              <h2 class="title2" data-aos="fade-left" data-aos-duration="1000">
+                IN THE SPOTLIGHT
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <!-- Slider main container -->
+            <div class="swiper swiper-spot">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img1.png" alt="" />
+                    </div>
+                    <p>Best Sellers</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img2.png" alt="" />
+                    </div>
+                    <p>Organic Wines</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img3.png" alt="" />
+                    </div>
+                    <p>Wines Under 3K</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img4.png" alt="" />
+                    </div>
+                    <p>Big Bold Reds</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img1.png" alt="" />
+                    </div>
+                    <p>Best Sellers</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img2.png" alt="" />
+                    </div>
+                    <p>Organic Wines</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img3.png" alt="" />
+                    </div>
+                    <p>Wines Under 3K</p>
+                  </div>
+                </div>
+                <div class="swiper-slide spot-swiper">
+                  <div class="spot-container text-center">
+                    <div class="spot-img">
+                      <img src="./assets/product/Spot-img4.png" alt="" />
+                    </div>
+                    <p>Big Bold Reds</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Gifting Section -->
+        <section class="gift-sec">
+          <div class="container container2">
+            <div class="gift-hdr text-center">
+              <h2 class="title2" data-aos="fade-leftt" data-aos-duration="1000">
+                GIFTING BY WINEVERSE
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper swiper-gift">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img1.png" alt="" />
+                    </div>
+                    <p>For Her</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img2.png" alt="" />
+                    </div>
+                    <p>Champagne</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img3.png" alt="" />
+                    </div>
+                    <p>For Him</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img4.png" alt="" />
+                    </div>
+                    <p>Birthday Gifts</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img1.png" alt="" />
+                    </div>
+                    <p>For Her</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img2.png" alt="" />
+                    </div>
+                    <p>Champagne</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img3.png" alt="" />
+                    </div>
+                    <p>For Him</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide gift-swiper">
+                  <div class="gift-container text-center">
+                    <div class="gift-img">
+                      <img src="./assets/product/Gift-img4.png" alt="" />
+                    </div>
+                    <p>Birthday Gifts</p>
+                    <div class="gift-btn text-center">
+                      <a href="" class="btn-secondary">Browse</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Best Seller Section -->
+        <section class="best-sec">
+          <div class="container container2">
+            <div class="best-hdr text-center">
+              <h2 class="title2" data-aos="fade-left" data-aos-duration="1000">
+                BEST SELLERS
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper swiper-best">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img1.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Susana Balbo, Crios Malbec 2022</p>
+                      <p class="price">$250</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img2.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Tentula Sant Antonio SCAIA Corvina 2021</p>
+                      <p class="price">$180</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img3.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Bisol, BEESTAR Cult, Prosecco extra Dry NV</p>
+                      <p class="price">$153</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img4.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>The Chocolate Block 2022</p>
+                      <p class="price">$322</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img1.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Susana Balbo, Crios Malbec 2022</p>
+                      <p class="price">$250</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img2.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Tentula Sant Antonio SCAIA Corvina 2021</p>
+                      <p class="price">$180</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img3.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>Bisol, BEESTAR Cult, Prosecco extra Dry NV</p>
+                      <p class="price">$153</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide best-swiper">
+                  <div class="best-container text-center">
+                    <div class="best-img">
+                      <img src="./assets/product/Best-sell-img4.png" alt="" />
+                    </div>
+                    <div class="best-cntn">
+                      <p>The Chocolate Block 2022</p>
+                      <p class="price">$322</p>
+                    </div>
+                    <div class="gift-btn best-btn text-center">
+                      <button href="" class="btn-secondary addToCartBtn">
+                        ADD TO CART
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="cartModal"
+              tabindex="-1"
+              aria-labelledby="cartModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content text-center p-4">
+                  <h5 class="modal-title" id="cartModalLabel">
+                    Item Added to Cart!
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Discover Section -->
+        <section class="disco-sec">
+          <div class="container container2">
+            <div class="disco-hdr text-center">
+              <h2 class="title2" data-aos="fade-left" data-aos-duration="1000">
+                DISCOVER WINES
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper swiper-disco">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img1.png" alt="" />
+                    </div>
+                    <p>Unique Grape Varietals</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img2.png" alt="" />
+                    </div>
+                    <p>Case of the Month</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img3.png" alt="" />
+                    </div>
+                    <p>Iconic Wines</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img4.png" alt="" />
+                    </div>
+                    <p>Limited Specials</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img1.png" alt="" />
+                    </div>
+                    <p>Unique Grape Varietals</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img2.png" alt="" />
+                    </div>
+                    <p>Case of the Month</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img3.png" alt="" />
+                    </div>
+                    <p>Iconic Wines</p>
+                  </div>
+                </div>
+                <div class="swiper-slide disco-swiper">
+                  <div class="disco-container text-center">
+                    <div class="disco-img">
+                      <img src="./assets/product/Discover-img4.png" alt="" />
+                    </div>
+                    <p>Limited Specials</p>
+                  </div>
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>
+        <!-- New Arrival Section -->
+        <section class="new-sec">
+          <div class="container">
+            <div class="new-hdr text-center">
+              <h2
+                class="title2"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              >
+                NEW ARRIVALS AT WINEVERSE
+              </h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                alt=""
+                data-aos="fade-right"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="swiper trend-swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
+                    </div>
+                    <div class="price"><span>$130.00 </span>$125.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
+                    </div>
+                    <div class="price"><span>$100.00 </span>$90.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span
+                      >
+                    </div>
+                    <div class="price">$214.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
+                        MAGNA</span
+                      >
+                    </div>
+                    <div class="price">$100.00 - $180.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img1.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>DONEC A ELIM IPSUM DICTUMST TEMPOR VET </span>
+                    </div>
+                    <div class="price"><span>$130.00 </span>$125.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img2.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span>ALIQUAM ID LOREM VEM NISL BANDIT DAPIBUS</span>
+                    </div>
+                    <div class="price"><span>$100.00 </span>$90.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img3.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >IN HAC HABITASSE PLATEA DICTUMST TEMPOR MOLLIS</span
+                      >
+                    </div>
+                    <div class="price">$214.00</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="bottle-box text-center">
+                    <div class="trend-img">
+                      <img src="./assets/Trend-bottle-img4.png" alt="" />
+                      <div class="label">
+                        <div class="discount">-22%</div>
+                      </div>
+                      <div class="hover-icon d-flex flex-column gap-2">
+                        <button>
+                          <img src="./assets/Eye-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Heart-btn.png" alt="" />
+                        </button>
+                        <button>
+                          <img src="./assets/Cart-btn.png" alt="" />
+                        </button>
+                      </div>
+                    </div>
+                    <ul
+                      class="rating list-unstyled d-flex gap-2 justify-content-center"
+                    >
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <li><img src="./assets/Red-star.png" alt="" /></li>
+                      <div class="review">(1 review)</div>
+                    </ul>
+                    <div class="bttl-desc text-center">
+                      <span
+                        >PHESULLAS RONCHUS VULPUCHATE EROS. & AC ULTRICES
+                        MAGNA</span
+                      >
+                    </div>
+                    <div class="price">$100.00 - $180.00</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand Section -->
+        <section class="brand-sec">
+          <div class="brand-hdr sec-hdr text-center">
+            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+              OUR BRANDS
+            </h2>
+            <img
+              src="./assets/Hdr-design.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="brand-wrpr" data-aos="fade-down" data-aos-duration="500">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr1">
+                      <img src="./assets/brand1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item sec-brand"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr2">
+                      <img src="./assets/brand2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr3">
+                      <img src="./assets/brand3.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item last-brand"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr4">
+                      <img src="./assets/brand4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sign Up Section -->
+        <section class="sign-sec">
+          <div class="sign-sec-wrpr">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div
+                    class="signup-left"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="signup-hdr">SIGN UP FOR OUR NEWSLETTERS</div>
+                    <p>
+                      Keep updated with the latest & greatest from our wonderful
+                      world of wine.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <form
+                    action=""
+                    class="signup-form d-flex"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <input
+                      type="email"
+                      name=""
+                      id="mail-input"
+                      placeholder="Your email address"
+                    />
+                    <input type="button" value="SUBMIT" id="submit-btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Section -->
+      <footer class="ftr-sec">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col20 ftr-col">
+                <div class="ftr-list1-wrpr">
+                  <div class="list-hdr">CONTACT US</div>
+                  <ul class="ftr-list1 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links"
+                        >1501 Main St, ste 50 Tewksbury MA 01876
+                      </a>
+                    </li>
+                    <li><a href="" class="ftr-links">email@example.com</a></li>
+                    <li><a href="" class="ftr-links">+1 526 220 0459</a></li>
+                    <li>Mon-Fri: 8:00 - 21:00</li>
+                    <li>Sat: 8:00 - 21:00</li>
+                    <li>Sun: 8:00 - 21:00</li>
+                  </ul>
+                  <ul class="scl-list list-unstyled d-flex align-items-center">
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link1.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link2.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links3.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links4.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list2-wrpr">
+                  <div class="list-hdr">CUSTOMER SERVICES</div>
+                  <ul class="ftr-list2 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Contact & FAQ</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Track YOUR Order</a></li>
+                    <li><a href="" class="ftr-links">Returns & Refunds</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                      <a href="" class="ftr-links">Interest Free Finance</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Cipmoney</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list3-wrpr">
+                  <div class="list-hdr">ABOUT US</div>
+                  <ul class="ftr-list3 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Our Story</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Team</a></li>
+                    <li><a href="" class="ftr-links">Press</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Jobs</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                    <li><a href="" class="ftr-links">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list4-wrpr">
+                  <div class="list-hdr">DISCOVER MORE</div>
+                  <ul class="ftr-list4 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Twitter</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Facebook</a></li>
+                    <li><a href="" class="ftr-links">Instagram</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Pinterest</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list5-wrpr">
+                  <div class="list-hdr">DOWNLOAD OUR APP</div>
+                  <div class="down-sec">
+                    <a href="" class="apple-wrpr"
+                      ><img src="./assets/Down-img1.png" alt=""
+                    /></a>
+                    <a href="" class="play-wrpr"
+                      ><img src="./assets/Down-img2.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="container">
+            <div
+              class="ftr-btm-wrpr d-flex flex-column flex-md-row align-items-center justify-content-between"
+            >
+              <div class="ftr-img">
+                <a href="index.html">
+                  <img src="./assets/Footer-logo.png" alt=""
                 /></a>
               </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <!-- Banner Section -->
-      <section
-        class="banner-sec d-flex align-items-center justify-content-center"
-      >
-        <div class="banner-cntn">
-          <h1 class="title1" data-aos="fade-up" data-aos-duration="6000">
-            Our Products
-          </h1>
-          <ul class="brdcrumb list-unstyled d-flex mx-auto">
-            <li><a href="index.html" class="brd-link">Home></a></li>
-            <li><a href="product.html" class="brd-link">Our Products</a></li>
-          </ul>
-        </div>
-      </section>
-      <!-- Discount Section -->
-      <section class="disc-sec">
-        <div class="auto-scroll d-flex align-items-center">
-          <div class="auto-scroll-itms scroll-item1" style="--i: 1">
-            <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
-          </div>
-          <div class="auto-scroll-itms scroll-item2" style="--i: 2">
-            <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
-          </div>
-          <div class="auto-scroll-itms scroll-item3" style="--i: 3">
-            <img src="./assets/Star.png" alt="" /> RICH HERITAGE
-          </div>
-          <div class="auto-scroll-itms scroll-item4" style="--i: 4">
-            <img src="./assets/Star.png" alt="" /> BEST OFFERS
-          </div>
-          <div class="auto-scroll-itms scroll-item5" style="--i: 5">
-            <img src="./assets/Star.png" alt="" class="img1" /> CHEERS DISCOUNTS
-            <img src="./assets/Star.png" alt="" />
-          </div>
-        </div>
-      </section>
-      <!-- Options Section -->
-      <section class="option-sec">
-        <div class="container container2">
-          <div class="row">
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">ALL WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">RED WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">WHITE WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">ROSE WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">CHAMPAGNE SPARKLING</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center">
-                <a href="" class="btn-secondary">SWEETS WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center bottom-row">
-                <a href="" class="btn-secondary">INDIAN WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center bottom-row">
-                <a href="" class="btn-secondary">ITALIAN WINES</a>
-              </div>
-            </div>
-            <div class="col-6 col-md-4">
-              <div class="option-btn text-center bottom-row">
-                <a href="" class="btn-secondary">FRENCH WINES</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Spotlight Section -->
-      <section class="spot-sec">
-        <div class="container container2">
-          <div class="spot-hdr text-center">
-            <h2 class="title2">IN THE SPOTLIGHT</h2>
-            <img src="./assets/Hdr-design.png" alt="" />
-          </div>
-          <!-- Slider main container -->
-          <div class="swiper swiper-spot">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img1.png" alt="" />
-                  </div>
-                  <p>Best Sellers</p>
+              <div class="ftr-btm-right d-flex align-items-center">
+                <div class="land-sec d-flex align-items-center">
+                  <img src="./assets/USA.png" alt="" />
+                  <span>Eng/USD</span>
                 </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img2.png" alt="" />
-                  </div>
-                  <p>Organic Wines</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img3.png" alt="" />
-                  </div>
-                  <p>Wines Under 3K</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img4.png" alt="" />
-                  </div>
-                  <p>Big Bold Reds</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img1.png" alt="" />
-                  </div>
-                  <p>Best Sellers</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img2.png" alt="" />
-                  </div>
-                  <p>Organic Wines</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img3.png" alt="" />
-                  </div>
-                  <p>Wines Under 3K</p>
-                </div>
-              </div>
-              <div class="swiper-slide spot-swiper">
-                <div class="spot-container text-center">
-                  <div class="spot-img">
-                    <img src="./assets/product/Spot-img4.png" alt="" />
-                  </div>
-                  <p>Big Bold Reds</p>
+                <div class="pay-list">
+                  <img src="./assets/Pay-lists.png" alt="" />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Gifting Section -->
-      <section class="gift-sec">
-        <div class="container container2">
-          <div class="gift-hdr text-center">
-            <h2 class="title2">GIFTING BY WINEVERSE</h2>
-            <img src="./assets/Hdr-design.png" alt="" />
-          </div>
-          <div class="swiper swiper-gift">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img1.png" alt="" />
-                  </div>
-                  <p>For Her</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img2.png" alt="" />
-                  </div>
-                  <p>Champagne</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img3.png" alt="" />
-                  </div>
-                  <p>For Him</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img4.png" alt="" />
-                  </div>
-                  <p>Birthday Gifts</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img1.png" alt="" />
-                  </div>
-                  <p>For Her</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img2.png" alt="" />
-                  </div>
-                  <p>Champagne</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img3.png" alt="" />
-                  </div>
-                  <p>For Him</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide gift-swiper">
-                <div class="gift-container text-center">
-                  <div class="gift-img">
-                    <img src="./assets/product/Gift-img4.png" alt="" />
-                  </div>
-                  <p>Birthday Gifts</p>
-                  <div class="gift-btn text-center">
-                    <a href="" class="btn-secondary">Browse</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Best Seller Section -->
-      <section class="best-sec">
-        <div class="container container2">
-          <div class="best-hdr text-center">
-            <h2 class="title2">BEST SELLERS</h2>
-            <img src="./assets/Hdr-design.png" alt="" />
-          </div>
-          <div class="swiper swiper-best">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img1.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Susana Balbo, Crios Malbec 2022</p>
-                    <p class="price">$250</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img2.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Tentula Sant Antonio SCAIA Corvina 2021</p>
-                    <p class="price">$180</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img3.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Bisol, BEESTAR Cult, Prosecco extra Dry NV</p>
-                    <p class="price">$153</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img4.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>The Chocolate Block 2022</p>
-                    <p class="price">$322</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img1.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Susana Balbo, Crios Malbec 2022</p>
-                    <p class="price">$250</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img2.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Tentula Sant Antonio SCAIA Corvina 2021</p>
-                    <p class="price">$180</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img3.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>Bisol, BEESTAR Cult, Prosecco extra Dry NV</p>
-                    <p class="price">$153</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide best-swiper">
-                <div class="best-container text-center">
-                  <div class="best-img">
-                    <img src="./assets/product/Best-sell-img4.png" alt="" />
-                  </div>
-                  <div class="best-cntn">
-                    <p>The Chocolate Block 2022</p>
-                    <p class="price">$322</p>
-                  </div>
-                  <div class="gift-btn best-btn text-center">
-                    <a href="" class="btn-secondary">ADD TO CART</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+      </footer>
+    </div>
+    <button id="backToTop" class="back-to-top-fixed fw-bolder">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
     <!-- Bootstrap Js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -533,6 +1293,10 @@
     ></script>
     <!-- Swiper Js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- AOS Js -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Luxy Js -->
+    <script src="dist/js/luxy.js" charset="utf-8"></script>
     <!-- Custom Js -->
     <script src="./script/script.js"></script>
     <!-- Product Js -->

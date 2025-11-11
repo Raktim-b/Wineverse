@@ -1189,6 +1189,7 @@ a {
   height: 100%;
   object-fit: cover;
 }
+
 /* Response Section */
 @media screen and (max-width: 1750px) {
   .btn-primary {
