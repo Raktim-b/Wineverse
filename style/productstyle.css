@@ -793,9 +793,12 @@ a {
   .spot-sec {
     padding-bottom: 34px;
   }
+  .spot-img{
+    height: 270px;
+  }
   .spot-container > p {
     font-size: 16px;
-    margin-top: -4px;
+    margin-top: 10px;
   }
   /* Gift Section */
   .gift-sec {
