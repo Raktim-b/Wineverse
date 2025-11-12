@@ -232,6 +232,73 @@ a {
 .back-to-top-fixed.show {
   display: flex;
 }
+/* Fade-out animation */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Spinner */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+.spinner {
+  --gap: 8px;
+  --clr: var(--secondary-color);
+  --height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.spinner span {
+  background: var(--clr);
+  width: 10px;
+  height: var(--height);
+  animation: grow 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.spinner span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.spinner span:nth-child(4) {
+  animation-delay: 0.475s;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+
+/* Main content transitions */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 /* Navbar Section */
 .hdr-sec {
   padding: 15px 0;

@@ -3,7 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <title>Wineverse</title>
+    <!-- FabIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/FabIcon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/FabIcon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/FabIcon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="./assets/FabIcon/site.webmanifest" />
     <!-- Bootstrap Css -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
@@ -30,8 +49,16 @@
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
+    <div class="loader-wrapper">
+      <div class="spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
     <div class="cursor"></div>
-    <div id="luxy">
+    <div id="luxy" class="page-wrpr">
       <!-- Header Section -->
       <header class="hdr-sec">
         <nav class="navbar navbar-expand-xl">

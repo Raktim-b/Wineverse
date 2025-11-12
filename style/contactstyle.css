@@ -243,6 +243,74 @@ a {
 .back-to-top-fixed.show {
   display: flex;
 }
+
+/* Fade-out animation */
+.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Spinner */
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+  z-index: 9999;
+}
+.spinner {
+  --gap: 8px;
+  --clr: var(--secondary-color);
+  --height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+}
+
+.spinner span {
+  background: var(--clr);
+  width: 10px;
+  height: var(--height);
+  animation: grow 1s ease-in-out infinite;
+}
+
+.spinner span:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.spinner span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.spinner span:nth-child(4) {
+  animation-delay: 0.475s;
+}
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(1.8);
+  }
+}
+
+/* Main content transitions */
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
 /* Navbar Section */
 .hdr-sec {
   padding: 15px 0;
@@ -498,15 +566,6 @@ input:focus {
 /* Find Us Section */
 .find-sec {
   padding: 110px 0 185px;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0.3) 0%,
-      rgba(0, 0, 0, 0.3) 100%
-    ),
-    /* Middle gradient (20% black overlay) */
-      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
-    /* Base gold-to-black gradient (from your Figma: #C0A483 → #000000) */
-      linear-gradient(192deg, #c0a483 0%, #000000 100%);
 }
 .map-frame {
   width: 100%;
