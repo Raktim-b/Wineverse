@@ -18,4 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(MouseMove);
   }
   MouseMove();
+
+  AOS.refresh();
 });
