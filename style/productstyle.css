@@ -1241,6 +1241,9 @@ a {
     font-size: 40px;
     margin: 9px 0 10px !important;
   }
+  .cursor{
+    display: none;
+  }
   /* Discount Section */
   @keyframes rightTOLeft {
     0% {

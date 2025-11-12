@@ -1296,6 +1296,9 @@ a {
   .ftr-col {
     width: 50%;
   }
+  .cursor {
+    display: none;
+  }
   .title2 {
     font-size: 22px;
   }

@@ -1007,6 +1007,9 @@ input:focus {
   .ftr-col {
     width: 50%;
   }
+  .cursor {
+    display: none;
+  }
   .btn-secondary {
     padding-block: 13.5px;
     font-size: 14px;

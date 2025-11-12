@@ -1790,6 +1790,9 @@ a {
   .title2 {
     font-size: 28px;
   }
+  .cursor{
+    display: none;
+  }
   /* Banner Section */
   .swiper-button-next,
   .swiper-button-prev {
