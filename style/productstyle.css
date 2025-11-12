@@ -544,7 +544,9 @@ a {
   font-size: 24px !important;
   font-weight: 500;
 }
-
+.modal-backdrop.show {
+  opacity: 0.1;
+}
 /* Discovery Section */
 .disco-sec {
   padding-bottom: 117px;
@@ -981,6 +983,7 @@ a {
   }
   /* Navbar Section */
   .navbar-toggler {
+    border: none !important;
     padding: 0 !important;
   }
   .navbar-toggler-icon {
