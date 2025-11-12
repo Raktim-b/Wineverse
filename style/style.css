@@ -334,9 +334,6 @@ a {
 .down-arrow:hover::before {
   width: 0% !important;
 }
-.down-arrow:hover > i {
-  transform: rotate(180deg);
-}
 .nav-link:hover {
   color: var(--primary-color) !important;
   transform: translateY(-2px);
@@ -350,6 +347,12 @@ a {
 }
 .navbar-nav > li:nth-child(4) {
   margin-right: 91px !important;
+}
+.dropdown-menu {
+  padding-block: 20px 10px;
+}
+.dropdown-item {
+  margin-bottom: 10px;
 }
 .dropdown-toggle::after {
   display: none;
@@ -1488,6 +1491,7 @@ a {
     font-size: 1.8rem;
     background-image: none;
   }
+  
   .offcanvas {
     flex-direction: column;
     overflow-y: hidden;
@@ -1513,6 +1517,14 @@ a {
   }
   .nav-btn {
     margin: 20px 0 !important;
+  }
+  .dropdown-menu {
+    position: absolute !important;
+    left: -35% !important;
+    top: 130% !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
   }
   .nav-icons {
     flex-direction: column;

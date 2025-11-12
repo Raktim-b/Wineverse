@@ -346,9 +346,7 @@ a {
 .down-arrow:hover::before {
   width: 0% !important;
 }
-.down-arrow:hover > i {
-  transform: rotate(180deg);
-}
+
 .nav-link:hover {
   color: var(--primary-color) !important;
   transform: translateY(-2px);
@@ -365,6 +363,12 @@ a {
 }
 .dropdown-toggle::after {
   display: none;
+}
+.dropdown-menu {
+  padding-block: 20px 10px;
+}
+.dropdown-item {
+  margin-bottom: 10px;
 }
 .nav-btn {
   margin-right: 22px !important;
@@ -401,7 +405,7 @@ a {
 }
 .brdcrumb {
   margin-top: 50px;
-  max-width: 223px;
+  max-width: 233px;
 }
 .brd-link {
   color: var(--primary-color);
@@ -1077,6 +1081,14 @@ a {
   .nav-link:hover::before {
     width: 0% !important;
   }
+  .dropdown-menu {
+    position: absolute !important;
+    left: -35% !important;
+    top: 130% !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
   .active::before {
     width: 0% !important;
   }
@@ -1356,7 +1368,7 @@ a {
   /* Banner Section */
   .brdcrumb {
     margin-top: 28px;
-    max-width: 178px;
+    max-width: 187px;
   }
   .brd-link {
     font-size: 20px;

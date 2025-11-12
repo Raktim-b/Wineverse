@@ -347,9 +347,6 @@ a {
 .down-arrow:hover::before {
   width: 0% !important;
 }
-.down-arrow:hover > i {
-  transform: rotate(180deg);
-}
 .nav-link:hover {
   color: var(--primary-color) !important;
   transform: translateY(-2px);
@@ -366,6 +363,12 @@ a {
 }
 .dropdown-toggle::after {
   display: none;
+}
+.dropdown-menu {
+  padding-block: 20px 10px;
+}
+.dropdown-item {
+  margin-bottom: 10px;
 }
 .nav-btn {
   margin-right: 22px !important;
@@ -402,7 +405,7 @@ a {
 }
 .brdcrumb {
   margin-top: 50px;
-  max-width: 178px;
+  max-width: 188px;
 }
 .brd-link {
   color: var(--primary-color);
@@ -1024,6 +1027,14 @@ a {
     font-size: 1.8rem;
     color: var(--primary-color);
   }
+  .dropdown-menu {
+    position: absolute !important;
+    left: -35% !important;
+    top: 130% !important;
+  }
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
   .nav-item {
     margin: 20px 0 0;
   }
@@ -1413,7 +1424,7 @@ a {
   /* Banner Section */
   .brdcrumb {
     margin-top: 28px;
-    max-width: 143px;
+    max-width: 152px;
   }
   .brd-link {
     font-size: 20px;
