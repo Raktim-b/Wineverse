@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
   const cursor = document.querySelector(".cursor");
   let mouseX = 0;
   let mouseY = 0;

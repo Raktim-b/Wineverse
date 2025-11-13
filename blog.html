@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog | Wineverse</title>
+    <!-- FabIcon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/FabIcon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/FabIcon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/FabIcon/android-chrome-512x512.png"
+    />
+    <link rel="manifest" href="./assets/FabIcon/site.webmanifest" />
+    <!-- Bootstrap Css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Swiper Css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Aos CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Font Awsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./style/blogstyle.css" />
+  </head>
+  <body>
+    <div class="loader-wrapper">
+      <div class="spinner">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="cursor"></div>
+    <div id="luxy" class="page-wrpr">
+      <!-- Header Section -->
+      <header class="hdr-sec">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container">
+            <div class="nav-logo">
+              <a class="navbar-brand" href="index.html"
+                ><img src="./assets/Logo.png" alt=""
+              /></a>
+            </div>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars navbar-toggler-icon text-white"></i>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              data-bs-theme="dark"
+              data-bs-scroll="false"
+              id="navbarSupportedContent"
+            >
+              <button
+                class="offcanvas-header me-auto mb-5"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <ul class="navbar-nav mx-auto align-items-center">
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="index.html"
+                    target="_blank"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html" target="_blank"
+                    >ABOUT US</a
+                  >
+                </li>
+                <li class="nav-item dropdown d-flex align-items-center gap-2">
+                  <a
+                    class="nav-link active"
+                    href="product.html"
+                    target="_blank"
+                  >
+                    PRODUCT
+                  </a>
+                  <a
+                    class="nav-link dropdown-toggle down-arrow"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-angle-down"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#">IN THE SPOTLIGHT</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">GIFTING BY WINEVERSE</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">BEST SELLERS</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">DISCOVER WINES</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">NEW ARRIVALS</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" target="_blank">BLOG</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html" target="_blank"
+                    >CONTACT</a
+                  >
+                </li>
+              </ul>
+              <div class="nav-icons d-flex align-items-center">
+                <div class="nav-btn">
+                  <a href="" class="btn-primary btn">LOGIN / REGISTER</a>
+                </div>
+                <div class="icon-part d-flex align-items-center">
+                  <button class="search-btn">
+                    <img src="./assets/Search-btn.png" alt="" />
+                  </button>
+                  <a href="" class="love-icon">
+                    <img src="./assets/Love-icon.png" alt="" />
+                  </a>
+                  <a href="" class="cart-icon"
+                    ><img src="./assets/Cart-icon.png" alt=""
+                  /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Banner Section -->
+        <section
+          class="banner-sec d-flex align-items-center justify-content-center"
+        >
+          <div class="banner-cntn">
+            <h1 class="title1" data-aos="fade-up" data-aos-duration="6000">
+              Our Blog
+            </h1>
+            <ul class="brdcrumb list-unstyled d-flex mx-auto gap-1">
+              <li><a href="index.html" class="brd-link">Home ></a></li>
+              <li class="brd-link">Blog</li>
+            </ul>
+          </div>
+        </section>
+        <!-- Discount Section -->
+        <section class="disc-sec">
+          <div class="auto-scroll d-flex align-items-center">
+            <div class="auto-scroll-itms scroll-item1" style="--i: 1">
+              <img src="./assets/Star.png" alt="" /> EXCLUSIVE SIPS
+            </div>
+            <div class="auto-scroll-itms scroll-item2" style="--i: 2">
+              <img src="./assets/Star.png" alt="" /> TIMELESS MOMENTS
+            </div>
+            <div class="auto-scroll-itms scroll-item3" style="--i: 3">
+              <img src="./assets/Star.png" alt="" /> RICH HERITAGE
+            </div>
+            <div class="auto-scroll-itms scroll-item4" style="--i: 4">
+              <img src="./assets/Star.png" alt="" /> BEST OFFERS
+            </div>
+            <div class="auto-scroll-itms scroll-item5" style="--i: 5">
+              <img src="./assets/Star.png" alt="" class="img1" /> CHEERS
+              DISCOUNTS
+              <img src="./assets/Star.png" alt="" />
+            </div>
+          </div>
+        </section>
+        <!-- Blog Section -->
+        <section class="blog-sec">
+          <div class="container">
+            <div class="blog-hdr sec-hdr text-center">
+              <h3 class="title3">OUR BLOG</h3>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+              <h2 class="title2" data-aos="fade-right">LATEST ARTICLES</h2>
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div
+                  class="article-card"
+                  data-aos="flip-left"
+                  data-aos-duration="500"
+                >
+                  <div class="blog-img">
+                    <img src="./assets/Blog/Blog-img1.png" alt="" />
+                  </div>
+                  <div class="blog-cntn">
+                    <div class="arti-hdr d-flex align-items-center">
+                      <div
+                        class="arti-hdr-left d-flex flex-column align-items-center"
+                      >
+                        20 <span>SEP</span>
+                      </div>
+                      <div class="arti-hdr-right">
+                        <p><span>Company News </span> by Admin</p>
+                        <div class="arti-bold">
+                          THE RISE OF CRAFT DISTILLERIES A LIQUOR.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arti-btm">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation 
+                      </p>
+                      <a href=""
+                        >READ MORE <i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div
+                  class="article-card border-0"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
+                  <div class="blog-img blog-mid-img">
+                    <img src="./assets/Blog/Blog-img2.png" alt="" />
+                    <div class="blog-cntn blog-mid-cntn">
+                      <div class="arti-hdr">
+                        <div
+                          class="arti-hdr-left d-flex flex-column align-items-center"
+                        >
+                          20 <span>SEP</span>
+                        </div>
+                        <div class="arti-hdr-right ms-0 mt-2">
+                          <p class="text-white">
+                            <span>Spritis </span> by Admin
+                          </p>
+                          <div class="arti-bold text-white">
+                            THE RISE OF CRAFT DISTILLERIES A LIQUOR.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div
+                  class="article-card"
+                  data-aos="flip-left"
+                  data-aos-durartion="1000"
+                >
+                  <div class="blog-img">
+                    <img src="./assets/Blog/Blog-img3.png" alt="" />
+                  </div>
+                  <div class="blog-cntn">
+                    <div class="arti-hdr d-flex align-items-center">
+                      <div
+                        class="arti-hdr-left d-flex flex-column align-items-center"
+                      >
+                        20 <span>SEP</span>
+                      </div>
+                      <div class="arti-hdr-right">
+                        <p><span>Company News </span> by Admin</p>
+                        <div class="arti-bold">
+                          THE RISE OF CRAFT DISTILLERIES A LIQUOR.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="arti-btm">
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation 
+                      </p>
+                      <a href=""
+                        >READ MORE <i class="fa-solid fa-arrow-right"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Recent Blog Section -->
+        <section class="recent-sec">
+          <div class="container">
+            <div class="recent-hdr sec-hdr text-center">
+              <h2 class="title2" data-aos="fade-right">RECENT BLOG</h2>
+              <img
+                src="./assets/Hdr-design.png"
+                alt=""
+                data-aos="fade-left"
+                data-aos-duration="1000"
+              />
+            </div>
+            <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="recent-card">
+                  <div class="recent-img">
+                    <img src="./assets/Blog/Recent-img1.png" alt="" />
+                  </div>
+                  <div class="date">3O Jan, 2024 . 10 mins read</div>
+                  <div class="recent-card-hdr">
+                    Unveiling The Secrect Beyound Premium Wine.
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="recent-card-btm d-flex align-items-center">
+                    <img src="./assets/Blog/Recent-btm-img1.png" alt="" />
+                    <p>Marcury Elizabeth</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="recent-card">
+                  <div class="recent-img">
+                    <img src="./assets/Blog/Recent-img2.png" alt="" />
+                  </div>
+                  <div class="date">29 Jan, 2024 . 5 mins read</div>
+                  <div class="recent-card-hdr">
+                    A Fashionable Guide On Wine According To Your Fantasy.
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="recent-card-btm d-flex align-items-center">
+                    <img src="./assets/Blog/Recent-btm-img2.png" alt="" />
+                    <p>Ruskin Bond</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4">
+                <div class="recent-card">
+                  <div class="recent-img">
+                    <img src="./assets/Blog/Recent-img3.png" alt="" />
+                  </div>
+                  <div class="date">26 Jan, 2024 . 8 mins read</div>
+                  <div class="recent-card-hdr">
+                    Top 5 Wine That Transform Your Journey
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                  </p>
+                  <div class="recent-card-btm d-flex align-items-center">
+                    <img src="./assets/Blog/Recent-btm-img3.png" alt="" />
+                    <p>Benjamin Augustus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Brand Section -->
+        <section class="brand-sec">
+          <div class="brand-hdr sec-hdr text-center">
+            <h2 class="title2" data-aos="fade-right" data-aos-duration="1000">
+              OUR BRANDS
+            </h2>
+            <img
+              src="./assets/Hdr-design.png"
+              alt=""
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            />
+          </div>
+          <div class="brand-wrpr" data-aos="fade-down" data-aos-duration="500">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr1">
+                      <img src="./assets/brand1.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item sec-brand"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr2">
+                      <img src="./assets/brand2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr3">
+                      <img src="./assets/brand3.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-3">
+                  <div
+                    class="brand-item last-brand"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <div class="brand-img-wrpr brand-img-wrpr4">
+                      <img src="./assets/brand4.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Sign Up Section -->
+        <section class="sign-sec">
+          <div class="sign-sec-wrpr">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div
+                    class="signup-left"
+                    data-aos="fade-right"
+                    data-aos-duration="1000"
+                  >
+                    <div class="signup-hdr">SIGN UP FOR OUR NEWSLETTERS</div>
+                    <p>
+                      Keep updated with the latest & greatest from our wonderful
+                      world of wine.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <form
+                    action=""
+                    class="signup-form d-flex"
+                    data-aos="fade-left"
+                    data-aos-duration="1000"
+                  >
+                    <input
+                      type="email"
+                      name=""
+                      id="mail-input"
+                      placeholder="Your email address"
+                    />
+                    <input type="button" value="SUBMIT" id="submit-btn" />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <!-- Footer Section -->
+      <footer class="ftr-sec">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col20 ftr-col">
+                <div class="ftr-list1-wrpr">
+                  <div class="list-hdr">CONTACT US</div>
+                  <ul class="ftr-list1 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links"
+                        >1501 Main St, ste 50 Tewksbury MA 01876
+                      </a>
+                    </li>
+                    <li><a href="" class="ftr-links">email@example.com</a></li>
+                    <li><a href="" class="ftr-links">+1 526 220 0459</a></li>
+                    <li>Mon-Fri: 8:00 - 21:00</li>
+                    <li>Sat: 8:00 - 21:00</li>
+                    <li>Sun: 8:00 - 21:00</li>
+                  </ul>
+                  <ul class="scl-list list-unstyled d-flex align-items-center">
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link1.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""><img src="./assets/Scl-link2.png" alt="" /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links3.png" alt=""
+                      /></a>
+                    </li>
+                    <li class="scl-links">
+                      <a href=""
+                        ><img src="./assets/Scl-links4.png" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list2-wrpr">
+                  <div class="list-hdr">CUSTOMER SERVICES</div>
+                  <ul class="ftr-list2 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Contact & FAQ</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Track YOUR Order</a></li>
+                    <li><a href="" class="ftr-links">Returns & Refunds</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Shipping & Delivery</a>
+                    </li>
+                    <li>
+                      <a href="" class="ftr-links">Interest Free Finance</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Cipmoney</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list3-wrpr">
+                  <div class="list-hdr">ABOUT US</div>
+                  <ul class="ftr-list3 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Our Story</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Team</a></li>
+                    <li><a href="" class="ftr-links">Press</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Jobs</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                    <li><a href="" class="ftr-links">Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list4-wrpr">
+                  <div class="list-hdr">DISCOVER MORE</div>
+                  <ul class="ftr-list4 ftr-list list-unstyled">
+                    <li>
+                      <a href="" class="ftr-links">Twitter</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Facebook</a></li>
+                    <li><a href="" class="ftr-links">Instagram</a></li>
+                    <li>
+                      <a href="" class="ftr-links">Pinterest</a>
+                    </li>
+                    <li><a href="" class="ftr-links">Blogs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col20 ftr-col">
+                <div class="ftr-list5-wrpr">
+                  <div class="list-hdr">DOWNLOAD OUR APP</div>
+                  <div class="down-sec">
+                    <a href="" class="apple-wrpr"
+                      ><img src="./assets/Down-img1.png" alt=""
+                    /></a>
+                    <a href="" class="play-wrpr"
+                      ><img src="./assets/Down-img2.png" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-btm">
+          <div class="container">
+            <div
+              class="ftr-btm-wrpr d-flex flex-column flex-md-row align-items-center justify-content-between"
+            >
+              <div class="ftr-img">
+                <a href="index.html">
+                  <img src="./assets/Footer-logo.png" alt=""
+                /></a>
+              </div>
+              <div class="ftr-btm-right d-flex align-items-center">
+                <div class="land-sec d-flex align-items-center">
+                  <img src="./assets/USA.png" alt="" />
+                  <span>Eng/USD</span>
+                </div>
+                <div class="pay-list">
+                  <img src="./assets/Pay-lists.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <button id="backToTop" class="back-to-top-fixed fw-bolder">
+      <i class="fa-solid fa-angle-up"></i>
+    </button>
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <!-- AOS Js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Luxy Js -->
+    <script src="dist/js/luxy.js" charset="utf-8"></script>
+    <!-- Custom Js -->
+    <script src="./script/script.js"></script>
+    <!-- Product Js -->
+    <script src="./script/productscript.js"></script>
+  </body>
+</html>
