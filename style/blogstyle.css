@@ -18,8 +18,8 @@
   --tertiary-color: #991421;
   --animation-duration: 12s;
   --services-totalItems: 5;
-  --services-totalItems2: 4;
-  --animation-duration2: 10s;
+  --services-totalItems2: 5;
+  --animation-duration2: 36s;
 }
 body,
 html {
@@ -691,6 +691,64 @@ a {
   max-width: 790px !important;
   margin: 0 auto;
 }
+/* Client Section */
+.client-sec {
+  padding-bottom: 120px;
+}
+.auto-scroll2 {
+  padding-block: 240px;
+  position: relative;
+  overflow: hidden;
+  background: var(--quad-color);
+}
+.auto-scroll-itms2 {
+  width: 395px;
+  margin: 0 auto;
+  position: absolute;
+  animation: rightTOLeft2 linear infinite;
+  animation-duration: var(--animation-duration2);
+  animation-delay: calc(
+    var(--animation-duration2) / var(--services-totalItems2) *
+      ((var(--services-totalItems2) - var(--i)) * -1)
+  );
+}
+@keyframes rightTOLeft2 {
+  0% {
+    right: -30%;
+  }
+  100% {
+    right: 110%;
+  }
+}
+.client-item3 {
+  width: 417px;
+}
+.testi-hdr {
+  font-size: 31px;
+  font-weight: 500;
+  text-align: center;
+  margin-block: 35px 19px;
+  color: #000;
+}
+.auto-scroll-itms2 > p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #57565b;
+}
+.testi-img {
+  width: 59px;
+  margin: 0 auto;
+}
+.testi-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.testi-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 6px;
+}
 /* Brand Section */
 .brand-sec {
   padding: 58px 0 118px;
@@ -951,6 +1009,15 @@ a {
     font-size: 18px;
     line-height: 25px;
   }
+  /* Client Section */
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -30%;
+    }
+    100% {
+      right: 152%;
+    }
+  }
   /* Sign Up Section */
   #submit-btn {
     width: 27.4%;
@@ -999,6 +1066,16 @@ a {
   .arti-bold {
     font-size: 24px;
     line-height: 30px;
+  }
+  /* Client Section */
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -35%;
+    }
+
+    100% {
+      right: 176%;
+    }
   }
   /* Sign Up Section */
   #submit-btn {
@@ -1132,6 +1209,32 @@ a {
     width: 40px;
     height: 40px;
   }
+  /* Client Section */
+  .client-sec {
+    padding-bottom: 80px;
+  }
+  .auto-scroll2 {
+    padding-block: 200px;
+  }
+  .testi-hdr {
+    font-size: 26px;
+    margin-block: 22px 11px;
+  }
+  .auto-scroll-itms2 {
+    width: 370px;
+  }
+  .auto-scroll-itms2 > p {
+    font-size: 17px;
+    line-height: 26px;
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -40%;
+    }
+    100% {
+      right: 183%;
+    }
+  }
   /* Sign Up Section */
   #mail-input {
     width: 75%;
@@ -1258,27 +1361,7 @@ a {
   .recent-card-btm > p {
     font-size: 18px;
   }
-  /* Brand Section */
-  .brand-wrpr {
-    position: relative;
-  }
-  .brand-wrpr::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    top: 50%;
-    right: 0;
-    left: 0;
-    background-color: #00000080;
-  }
-  .brand-item {
-    /* border-bottom: 1px solid #00000080; */
-    margin: 0 auto;
-  }
-  .sec-brand {
-    border-right: none;
-  }
+
   /* Show Case Section */
   .show-sec {
     padding-bottom: 90px;
@@ -1305,6 +1388,56 @@ a {
   }
   .show-left-img {
     height: 335px;
+  }
+  /* Client Section */
+  .client-sec {
+    padding-bottom: 50px;
+  }
+  .auto-scroll2 {
+    padding-block: 175px;
+  }
+  .testi-name {
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .auto-scroll-itms2 > p {
+    font-size: 16px;
+    line-height: 23px;
+  }
+  .testi-hdr {
+    font-size: 22px;
+    margin-block: 10px 7px;
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -40%;
+    }
+
+    100% {
+      right: 212%;
+    }
+  }
+  /* Brand Section */
+  .brand-wrpr {
+    position: relative;
+  }
+  .brand-wrpr::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    left: 0;
+    background-color: #00000080;
+  }
+  .brand-item {
+    /* border-bottom: 1px solid #00000080; */
+    margin: 0 auto;
+  }
+  .sec-brand {
+    border-right: none;
   }
   /* Sign Up Section */
   .sign-sec {
@@ -1445,6 +1578,35 @@ a {
   }
   .show-img-btm {
     margin-top: 10px;
+  }
+  /* Client Section */
+  .auto-scroll2 {
+    padding-block: 160px;
+  }
+  .auto-scroll-itms2 {
+    width: 327px;
+  }
+  .testi-name {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .auto-scroll-itms2 > p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  .testi-hdr {
+    font-size: 20px;
+    margin-block: 10px 3px;
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -67%;
+    }
+
+    100% {
+      right: 279%;
+    }
   }
   /* Brand Section */
   .brand-sec {
@@ -1626,6 +1788,38 @@ a {
     font-size: 20px;
     line-height: 27px;
   }
+  /* Client Section */
+  .client-sec {
+    padding-bottom: 30px;
+  }
+  .auto-scroll2 {
+    padding-block: 140px;
+  }
+  .testi-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 6px;
+  }
+  .auto-scroll-itms2 {
+    width: 280px;
+  }
+  .auto-scroll-itms2 > p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .testi-hdr {
+    font-size: 16px;
+    margin-block: -8px 3px;
+  }
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -112%;
+    }
+
+    100% {
+      right: 257%;
+    }
+  }
   /* Brand Section */
 
   .brand-sec {
@@ -1711,6 +1905,16 @@ a {
   }
 }
 @media screen and (max-width: 420px) {
+  /* Client Section */
+  @keyframes rightTOLeft2 {
+    0% {
+      right: -112%;
+    }
+
+    100% {
+      right: 411%;
+    }
+  }
   /* Brand Item */
   .brand-item {
     height: 155px;
