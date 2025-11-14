@@ -189,12 +189,12 @@ a {
   mix-blend-mode: difference;
   height: 18px;
   width: 18px;
-  cursor: none;
   border-radius: 50%;
   background: var(--quad-color);
   transform: rotate(325deg);
   position: fixed;
   z-index: 9999;
+  pointer-events: none;
 }
 /* Back TO Top */
 .back-to-top-fixed {
@@ -1491,7 +1491,7 @@ a {
     font-size: 1.8rem;
     background-image: none;
   }
-  
+
   .offcanvas {
     flex-direction: column;
     overflow-y: hidden;
@@ -1790,7 +1790,7 @@ a {
   .title2 {
     font-size: 28px;
   }
-  .cursor{
+  .cursor {
     display: none;
   }
   /* Banner Section */

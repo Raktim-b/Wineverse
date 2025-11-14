@@ -8,10 +8,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const swiper = new Swiper(".mySwiper", {
     loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
     autoplay: {
       delay: 4000,
-      pauseOnMouseEnter: true, // Pause autoplay when mouse enters the Swiper container
-      disableOnInteraction: false,
     },
     speed: 800,
     on: {
