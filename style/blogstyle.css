@@ -209,7 +209,6 @@ a {
   mix-blend-mode: difference;
   height: 18px;
   width: 18px;
-  cursor: none;
   border-radius: 50%;
   background: var(--quad-color);
   transform: rotate(325deg);
@@ -484,6 +483,11 @@ a {
 .article-card {
   max-width: 590px;
   height: 815px;
+  transition: all 0.4s linear;
+}
+.article-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .blog-img {
   width: 100%;
@@ -564,7 +568,8 @@ a {
   padding: 0 !important;
   left: 52px;
   bottom: 140px;
-} /* Recent Blog Section */
+}
+/* Recent Blog Section */
 .recent-sec {
   padding-bottom: 148px;
 }
@@ -573,10 +578,18 @@ a {
 }
 .recent-card {
   max-width: 585px;
+  transition: all 0.4s linear;
+}
+.recent-card:hover > .recent-img {
+  transform: scale(1.04);
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 .recent-img {
   width: 100%;
   position: relative;
+  transition: all 0.4s linear;
+  overflow: hidden;
 }
 .img-txt {
   position: absolute;
@@ -593,6 +606,9 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.recent-img:hover {
+  transform: scale(1.1);
 }
 .date {
   font-size: 20px;
@@ -1723,8 +1739,9 @@ a {
     font-size: 14px;
     margin-left: 14px;
   }
+
   .article-card {
-    height: 468px;
+    height: 494px;
     margin: 0 auto 20px;
   }
   .arti-btm > a {
@@ -1905,6 +1922,11 @@ a {
   }
 }
 @media screen and (max-width: 420px) {
+  /* Blog Section */
+  .article-card {
+    height: 468px;
+    margin: 0 auto 20px;
+  }
   /* Client Section */
   @keyframes rightTOLeft2 {
     0% {
