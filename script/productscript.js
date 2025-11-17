@@ -137,21 +137,36 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
-  const addToCartBtns = document.querySelectorAll(".addToCartBtn");
-  const modalElement = document.getElementById("cartModal");
-  const cartModal = new bootstrap.Modal(modalElement);
 
-  addToCartBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault(); // prevent any weird default action
-      cartModal.show();
+  // PopUp Notification
+  const lovePopup = document.getElementById("popupMsgLove");
+  const cartPopup = document.getElementById("popupMsgCart");
 
-      // hide automatically after 3 seconds
-      setTimeout(() => {
-        cartModal.hide();
-      }, 3000);
+  // Function to show popup
+  function showPopup(popupElement) {
+    popupElement.classList.add("show");
+
+    setTimeout(() => {
+      popupElement.classList.remove("show");
+    }, 3000); // 3 seconds
+  }
+
+  //All Like Buttons
+  const heartButtons = document.querySelectorAll(".heartBtn");
+  heartButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showPopup(lovePopup);
     });
   });
+
+  //All Add to Cart Buttons
+  const cartButtons = document.querySelectorAll(".addtocartBtn");
+  cartButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showPopup(cartPopup);
+    });
+  });
+
   const cursor = document.querySelector(".cursor");
   let mouseX = 0;
   let mouseY = 0;
@@ -203,5 +218,5 @@ window.onload = function () {
       content.classList.remove("hidden");
       content.classList.add("show");
     }, 500); // wait for fade-out transition
-  }, 3000);
+  }, 2000);
 };

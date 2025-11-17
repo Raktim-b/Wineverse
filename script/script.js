@@ -35,7 +35,34 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     },
   });
+  // PopUp Notification
+  const lovePopup = document.getElementById("popupMsgLove");
+  const cartPopup = document.getElementById("popupMsgCart");
 
+  // Function to show popup
+  function showPopup(popupElement) {
+    popupElement.classList.add("show");
+
+    setTimeout(() => {
+      popupElement.classList.remove("show");
+    }, 3000); // 3 seconds
+  }
+
+  //All Like Buttons
+  const heartButtons = document.querySelectorAll(".heartBtn");
+  heartButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showPopup(lovePopup);
+    });
+  });
+
+  //All Add to Cart Buttons
+  const cartButtons = document.querySelectorAll(".addtocartBtn");
+  cartButtons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      showPopup(cartPopup);
+    });
+  });
   // Initialize first slide text
   window.addEventListener("load", () => {
     const firstText = document.querySelector(
@@ -209,5 +236,5 @@ window.onload = function () {
       content.classList.remove("hidden");
       content.classList.add("show");
     }, 500); // wait for fade-out transition
-  }, 3000);
+  }, 2000);
 };

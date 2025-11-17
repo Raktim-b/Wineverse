@@ -587,10 +587,10 @@ a {
 
 @keyframes rightTOLeft {
   0% {
-    right: -10%;
+    right: -20%;
   }
   100% {
-    right: 110%;
+    right: 97%;
   }
 }
 /* Professional Section  */
@@ -1129,10 +1129,10 @@ a {
   }
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -25%;
     }
     100% {
-      right: 130%;
+      right: 115%;
     }
   }
   /* Professional Section */
@@ -1217,11 +1217,10 @@ a {
   /* Discount Section */
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -30%;
     }
-
     100% {
-      right: 176%;
+      right: 153%;
     }
   }
   /* Professional Section */
@@ -1348,11 +1347,10 @@ a {
   /* Discount Section */
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -45%;
     }
-
     100% {
-      right: 234%;
+      right: 180%;
     }
   }
   /* Professional Section */
@@ -1524,11 +1522,10 @@ a {
 
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -70%;
     }
-
     100% {
-      right: 280%;
+      right: 294%;
     }
   }
   /* Professional Section */

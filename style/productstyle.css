@@ -201,7 +201,6 @@ a {
   mix-blend-mode: difference;
   height: 18px;
   width: 18px;
-  cursor: none;
   border-radius: 50%;
   background: var(--quad-color);
   transform: rotate(325deg);
@@ -457,10 +456,10 @@ a {
 
 @keyframes rightTOLeft {
   0% {
-    right: -10%;
+    right: -20%;
   }
   100% {
-    right: 110%;
+    right: 97%;
   }
 }
 /* Option Section */
@@ -603,6 +602,11 @@ a {
   border: 2px solid var(--tertiary-color);
 }
 /* Modal */
+#cartModal {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
 #cartModal .modal-content {
   background: var(--quad-color);
   color: var(--tertiary-color);
@@ -615,7 +619,7 @@ a {
   font-weight: 500;
 }
 .modal-backdrop.show {
-  opacity: 0.1;
+  opacity: 0.6;
 }
 /* Discovery Section */
 .disco-sec {
@@ -841,6 +845,30 @@ a {
   border: none;
   letter-spacing: 1.28px;
 }
+/* Popup Section */
+.popup-noti {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--quad-color);
+  color: var(--tertiary-color);
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 12px 20px;
+  font-size: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+  transition: all 0.3s ease;
+  z-index: 9999;
+}
+
+.popup-noti.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Footer Section */
 .ftr-sec {
   background-color: #000;
@@ -1109,10 +1137,10 @@ a {
   }
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -25%;
     }
     100% {
-      right: 130%;
+      right: 115%;
     }
   }
   /* Option Section */
@@ -1154,11 +1182,10 @@ a {
   /* Discount Section */
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -30%;
     }
-
     100% {
-      right: 176%;
+      right: 153%;
     }
   }
   /* Option Text */
@@ -1246,11 +1273,10 @@ a {
   /* Discount Section */
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -45%;
     }
-
     100% {
-      right: 234%;
+      right: 180%;
     }
   }
   /* Option Section */
@@ -1392,11 +1418,10 @@ a {
 
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -70%;
     }
-
     100% {
-      right: 280%;
+      right: 294%;
     }
   }
   /* Option Section */

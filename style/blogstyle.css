@@ -464,10 +464,10 @@ a {
 
 @keyframes rightTOLeft {
   0% {
-    right: -10%;
+    right: -20%;
   }
   100% {
-    right: 110%;
+    right: 97%;
   }
 }
 /* Blog Section */
@@ -1170,10 +1170,10 @@ a {
   }
   @keyframes rightTOLeft {
     0% {
-      right: -10%;
+      right: -25%;
     }
     100% {
-      right: 130%;
+      right: 115%;
     }
   }
   /* Blog Section */
@@ -1245,10 +1245,10 @@ a {
   }
   @keyframes rightTOLeft2 {
     0% {
-      right: -40%;
+      right: -25%;
     }
     100% {
-      right: 183%;
+      right: 115%;
     }
   }
   /* Sign Up Section */
@@ -1426,12 +1426,11 @@ a {
     margin-block: 10px 7px;
   }
   @keyframes rightTOLeft2 {
-    0% {
-      right: -40%;
+     0% {
+      right: -30%;
     }
-
     100% {
-      right: 212%;
+      right: 153%;
     }
   }
   /* Brand Section */
@@ -1499,12 +1498,11 @@ a {
   }
   /* Discount Section */
   @keyframes rightTOLeft {
-    0% {
-      right: -10%;
+     0% {
+      right: -45%;
     }
-
     100% {
-      right: 234%;
+      right: 180%;
     }
   }
   /* Blog Section */
@@ -1707,12 +1705,11 @@ a {
   }
 
   @keyframes rightTOLeft {
-    0% {
-      right: -10%;
+   0% {
+      right: -70%;
     }
-
     100% {
-      right: 280%;
+      right: 294%;
     }
   }
   /* Blog Section */
